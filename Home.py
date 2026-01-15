@@ -35,12 +35,33 @@ st.markdown(
         margin-bottom: 0;
       }
 
-      /* Make buttons consistent and full-width */
+      /* ----------------------------
+         BUTTONS (full width + Age-It yellow)
+      ---------------------------- */
       div.stButton > button {
-        width: 100%;
-        height: 48px;
-        font-size: 1rem;
-        font-weight: 600;
+        width: 100% !important;        /* full card width */
+        height: 52px !important;       /* slightly taller */
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+        background: #FFD401 !important;
+        color: #111 !important;
+        border: 1px solid #E6C200 !important;
+        border-radius: 10px !important;
+      }
+
+      div.stButton > button:hover {
+        background: #FFDD2E !important; /* slightly lighter on hover */
+        border-color: #E6C200 !important;
+        color: #111 !important;
+      }
+
+      div.stButton > button:focus {
+        outline: none !important;
+        box-shadow: 0 0 0 3px rgba(255, 212, 1, 0.35) !important;
+      }
+
+      div.stButton > button:active {
+        transform: translateY(1px);
       }
     </style>
     """,

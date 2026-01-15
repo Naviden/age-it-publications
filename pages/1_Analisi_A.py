@@ -10,7 +10,7 @@ import streamlit.components.v1 as components
 # ----------------------------
 # Page config
 # ----------------------------
-st.set_page_config(page_title="Analisi 1 - Pubblicazioni per Spoke", layout="wide")
+st.set_page_config(page_title="Topics: Pubblicazioni per Spoke", layout="wide")
 
 
 # ----------------------------

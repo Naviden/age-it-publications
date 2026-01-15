@@ -53,7 +53,7 @@ with col_logo:
         st.image(str(LOGO_PATH), width=140)
 
 with col_title:
-    st.title("Analisi Age-It")
+    st.title("Topics")
     st.markdown(
         "<div style='color:#777;'>Seleziona una delle analisi disponibili</div>",
         unsafe_allow_html=True,

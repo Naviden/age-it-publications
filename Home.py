@@ -122,7 +122,7 @@ with c1:
         """
         <div class="choice-box">
           <h3>Topics</h3>
-          <p>Paper per topic.</p>
+          <p>Analisi delle pubblicazioni suddivise per principali temi di ricerca.</p>
         </div>
         """,
         unsafe_allow_html=True,

@@ -32,8 +32,8 @@ st.markdown(
     """
     <style>
       .block-container {
-        padding-top: 1.2rem !important;
-        max-width: 1200px;
+        padding-top: 1.4rem !important;
+        max-width: 1400px;   /* a bit wider for 4 cards */
       }
 
       .choice-box {
@@ -45,37 +45,25 @@ st.markdown(
         box-shadow: 0 2px 6px rgba(0,0,0,0.04);
       }
 
-      .choice-box h3 {
-        margin-top: 0;
-        margin-bottom: 0.4rem;
-        color: #111;
-      }
-
-      .choice-box p {
-        color: #444;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 1.35;
-      }
-
-      /* Full-width yellow buttons */
-      div[data-testid="column"] div.stButton { width: 100% !important; }
-      div.stButton > button {
+      /* --- Make the "Apri" button full-width and yellow --- */
+      div[data-testid="stButton"] > button {
         width: 100% !important;
-        height: 52px !important;
-        font-size: 1rem !important;
+        height: 56px !important;
+        font-size: 1.05rem !important;
         font-weight: 700 !important;
         background: #FFD401 !important;
         color: #111 !important;
-        border: 1px solid #E6C200 !important;
-        border-radius: 10px !important;
+        border: 1px solid rgba(0,0,0,0.15) !important;
+        border-radius: 12px !important;
       }
-      div.stButton > button:hover {
-        background: #FFDD2E !important;
+
+      div[data-testid="stButton"] > button:hover {
+        filter: brightness(0.98);
+        border-color: rgba(0,0,0,0.25) !important;
       }
-      div.stButton > button:focus {
-        outline: none !important;
-        box-shadow: 0 0 0 3px rgba(255, 212, 1, 0.35) !important;
+
+      div[data-testid="stButton"] > button:active {
+        filter: brightness(0.96);
       }
     </style>
     """,

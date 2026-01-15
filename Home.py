@@ -4,14 +4,37 @@ import streamlit as st
 
 st.set_page_config(page_title="Age-It: Prodotti scientifici", layout="wide")
 
-# --- Paths ---
+# ----------------------------
+# Navigation (flat list) - WORKING PATTERN
+# ----------------------------
+pg = st.navigation(
+    [
+        st.Page("Home.py", title="Home", icon="🏠"),
+        st.Page("pages/1_Topics.py", title="Topics"),
+        st.Page("pages/2_Collaborazioni_tra_aree_scientifiche.py", title="Collaborazioni"),
+        st.Page("pages/3_Tracce_Narrative.py", title="Tracce Narrative"),
+        st.Page("pages/4_Keyword_Analysis.py", title="Keyword Analysis"),
+    ]
+)
+
+# If the selected page is NOT Home, run it and stop.
+# Home UI below will render only for the landing.
+if pg.title != "Home":
+    pg.run()
+    st.stop()
+
+# ----------------------------
+# Home (landing) UI
+# ----------------------------
 LOGO_PATH = Path(__file__).parent / "logo.jpg"
 
-# --- CSS for cards + buttons ---
 st.markdown(
     """
     <style>
-      .block-container { padding-top: 1.4rem !important; max-width: 1200px; }
+      .block-container {
+        padding-top: 1.2rem !important;
+        max-width: 1200px;
+      }
 
       .choice-box {
         background: #ffffff;
@@ -21,10 +44,21 @@ st.markdown(
         height: 100%;
         box-shadow: 0 2px 6px rgba(0,0,0,0.04);
       }
-      .choice-box h3 { margin-top: 0; color: #111; }
-      .choice-box p { color: #444; margin-bottom: 0; }
 
-      /* Buttons full width + yellow theme */
+      .choice-box h3 {
+        margin-top: 0;
+        margin-bottom: 0.4rem;
+        color: #111;
+      }
+
+      .choice-box p {
+        color: #444;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.35;
+      }
+
+      /* Full-width yellow buttons */
       div[data-testid="column"] div.stButton { width: 100% !important; }
       div.stButton > button {
         width: 100% !important;
@@ -39,12 +73,16 @@ st.markdown(
       div.stButton > button:hover {
         background: #FFDD2E !important;
       }
+      div.stButton > button:focus {
+        outline: none !important;
+        box-shadow: 0 0 0 3px rgba(255, 212, 1, 0.35) !important;
+      }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
-# --- Header with logo ---
+# Header with logo
 col_logo, col_title = st.columns([1, 6], vertical_alignment="center")
 
 with col_logo:
@@ -54,16 +92,21 @@ with col_logo:
 with col_title:
     st.title("Age-It: Prodotti scientifici")
     st.markdown(
-        "<div style='color:#777;'>Esplora pubblicazioni e relazioni nei prodotti scientifici Age-It.</div>",
+        """
+        <div style='color:#777; line-height:1.35;'>
+          In questa sezione puoi esplorare i prodotti scientifici di Age-It attraverso diverse chiavi di lettura:
+          temi di ricerca, collaborazioni tra ricercatori, tracce narrative e parole chiave.
+          Seleziona un’analisi per iniziare.
+        </div>
+        """,
         unsafe_allow_html=True,
     )
 
 st.write("")
 
-# --- Four analysis choices (in two rows if needed) ---
+# Cards (4 columns)
 c1, c2, c3, c4 = st.columns(4, gap="large")
 
-# ---- Topics ----
 with c1:
     st.markdown(
         """
@@ -75,15 +118,23 @@ with c1:
         unsafe_allow_html=True,
     )
     if st.button("Apri", key="go_topics"):
-        st.switch_page("pages/1_Topics.py")
+        pg = st.navigation(
+            [
+                st.Page("Home.py", title="Home", icon="🏠"),
+                st.Page("pages/1_Topics.py", title="Topics"),
+                st.Page("pages/2_Collaborazioni_tra_aree_scientifiche.py", title="Collaborazioni"),
+                st.Page("pages/3_Tracce_Narrative.py", title="Tracce Narrative"),
+                st.Page("pages/4_Keyword_Analysis.py", title="Keyword Analysis"),
+            ]
+        )
+        st.switch_page("pages/1_Topics.py")  # optional; see note below
 
-# ---- Collaborazioni ----
 with c2:
     st.markdown(
         """
         <div class="choice-box">
-          <h3>Collaborazioni tra ricercatori</h3>
-          <p>Visualizzazione delle collaborazioni tra aree scientifiche tramite diagramma chord.</p>
+          <h3>Collaborazioni</h3>
+          <p>Collaborazioni tra aree scientifiche, derivate dalle co-autorialità.</p>
         </div>
         """,
         unsafe_allow_html=True,
@@ -91,13 +142,12 @@ with c2:
     if st.button("Apri", key="go_collab"):
         st.switch_page("pages/2_Collaborazioni_tra_aree_scientifiche.py")
 
-# ---- Tracce Narrative ----
 with c3:
     st.markdown(
         """
         <div class="choice-box">
           <h3>Tracce Narrative</h3>
-          <p>Distribuzione di 8 categorie narrative tramite diagramma a torta/donut.</p>
+          <p>Distribuzione delle categorie narrative con grafico a torta/donut.</p>
         </div>
         """,
         unsafe_allow_html=True,
@@ -105,16 +155,15 @@ with c3:
     if st.button("Apri", key="go_tracce"):
         st.switch_page("pages/3_Tracce_Narrative.py")
 
-# ---- Keyword Analysis ----
 with c4:
     st.markdown(
         """
         <div class="choice-box">
           <h3>Keyword Analysis</h3>
-          <p>Visualizzazione delle parole chiave tramite word cloud basata su frequenza.</p>
+          <p>Word cloud delle parole chiave basata su frequenza e filtri.</p>
         </div>
         """,
         unsafe_allow_html=True,
     )
     if st.button("Apri", key="go_keywords"):
-      st.switch_page("pages/4_Keyword_Analysis.py")
+        st.switch_page("pages/4_Keyword_Analysis.py")

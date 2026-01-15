@@ -32,9 +32,11 @@ st.markdown(
 
       .choice-box p {
         color: #444;
+        margin-bottom: 0;
       }
 
-      .choice-btn button {
+      /* Make buttons consistent and full-width */
+      div.stButton > button {
         width: 100%;
         height: 48px;
         font-size: 1rem;
@@ -61,34 +63,44 @@ with col_title:
 
 st.write("")
 
-# --- Two main choices ---
-left, right = st.columns(2, gap="large")
+# --- Three main choices (1 row, 3 columns) ---
+c1, c2, c3 = st.columns(3, gap="large")
 
-with left:
+with c1:
     st.markdown(
         """
         <div class="choice-box">
           <h3>Topics</h3>
-          <p>Paper by topic.</p>
+          <p>Paper per topic.</p>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    if st.button("Apri", key="go_a1"):
+    if st.button("Apri", key="go_topics"):
         st.switch_page("pages/1_Topics.py")
 
-with right:
+with c2:
     st.markdown(
         """
         <div class="choice-box">
           <h3>Collaborazioni tra ricercatori</h3>
-          <p>
-            Visualizzazione delle collaborazioni tra aree scientifiche
-            tramite diagramma chord.
-          </p>
+          <p>Visualizzazione delle collaborazioni tra aree scientifiche tramite diagramma chord.</p>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    if st.button("Apri", key="go_a2"):
+    if st.button("Apri", key="go_collab"):
         st.switch_page("pages/2_Collaborazioni_tra_aree_scientifiche.py")
+
+with c3:
+    st.markdown(
+        """
+        <div class="choice-box">
+          <h3>Tracce Narrative</h3>
+          <p>Distribuzione di 8 categorie narrative tramite diagramma a torta/donut.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    if st.button("Apri", key="go_tracce"):
+        st.switch_page("pages/3_Tracce_Narrative.py")

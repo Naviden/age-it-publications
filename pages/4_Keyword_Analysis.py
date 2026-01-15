@@ -41,7 +41,6 @@ if "keywords" not in df.columns:
 # Header
 # ----------------------------
 col_logo, col_title = st.columns([1, 7], vertical_alignment="center")
-
 with col_logo:
     if LOGO_PATH.exists():
         st.image(str(LOGO_PATH), width=140)
@@ -49,7 +48,7 @@ with col_logo:
 with col_title:
     st.title("Keyword Analysis")
     st.markdown(
-        "<div style='color:#777;'>Visualizzazione delle parole chiave tramite una word cloud basata su frequenza.</div>",
+        "<div style='color:#777;'>Word cloud delle parole chiave (dimensione proporzionale alla frequenza).</div>",
         unsafe_allow_html=True,
     )
 
@@ -65,58 +64,53 @@ split_mode = st.sidebar.selectbox(
     "Separatore parole chiave",
     options=["Auto (consigliato)", "Virgola (,)", "Punto e virgola (;)", "Nuova riga"],
     index=0,
-    help=(
-        "Come separare le parole chiave presenti nella colonna. "
-        "'Auto' gestisce virgola, punto e virgola e nuove righe."
-    ),
+    help="Come separare le parole chiave presenti nella colonna 'keywords'.",
 )
 
 min_freq = st.sidebar.slider(
-    "Frequenza minima per visualizzare",
+    "Frequenza minima",
     min_value=1,
     max_value=50,
     value=2,
     step=1,
-    help="Mostra keyword solo se la frequenza è >= soglia.",
+    help="Mostra solo keyword con frequenza >= soglia.",
 )
 
 max_words = st.sidebar.slider(
     "Numero massimo di keyword",
     min_value=10,
-    max_value=200,
-    value=80,
+    max_value=250,
+    value=100,
     step=10,
-    help="Limita quante keyword visualizzare (ordinate per frequenza).",
+    help="Limita il numero di keyword visualizzate (ordinate per frequenza).",
 )
 
 max_phrase_words = st.sidebar.slider(
     "Lunghezza massima keyword (in parole)",
     min_value=1,
-    max_value=10,
+    max_value=12,
     value=4,
     step=1,
-    help="Rimuove keyword troppo lunghe (es. frasi intere) per evitare output poco leggibile.",
+    help="Filtra keyword troppo lunghe (es. frasi intere).",
 )
 
 palette = st.sidebar.selectbox(
     "Palette colori",
     ["set3", "tableau10", "paired"],
     index=0,
-    help="Palette colori per la word cloud.",
 )
 
 rotate_mode = st.sidebar.selectbox(
     "Rotazione",
     ["Solo orizzontale", "0° / 90°"],
     index=0,
-    help="Se attivo 0°/90°, alcune keyword verranno ruotate di 90°.",
+    help="Se 0°/90°, una parte delle keyword viene ruotata di 90°.",
 )
 
 
 # ----------------------------
-# Build word frequency table
+# Build keyword frequency table
 # ----------------------------
-# Choose split regex
 if split_mode == "Auto (consigliato)":
     split_re = r"[,\n;]+"
 elif split_mode == "Virgola (,)":
@@ -130,27 +124,19 @@ series = df["keywords"].fillna("").astype(str)
 
 tokens = (
     series
-    .str.replace(r"\\s+", " ", regex=True)          # normalise whitespace
-    .str.split(split_re, regex=True)               # split into tokens
+    .str.replace(r"\s+", " ", regex=True)
+    .str.split(split_re, regex=True)
     .explode()
     .astype(str)
     .str.strip()
 )
 
-# Remove empties
 tokens = tokens[tokens != ""]
-
-# Remove pure punctuation
-tokens = tokens[~tokens.str.fullmatch(r"[\\W_]+", na=False)]
-
-# Filter too-long "keywords" that are actually whole sentences
+tokens = tokens[~tokens.str.fullmatch(r"[\W_]+", na=False)]
 tokens = tokens[tokens.str.split().str.len() <= max_phrase_words]
 
-# Count
 count_df = tokens.value_counts().reset_index()
 count_df.columns = ["text", "count"]
-
-# Apply min frequency and cap number of words
 count_df = count_df[count_df["count"] >= min_freq].head(max_words)
 
 if count_df.empty:
@@ -161,140 +147,136 @@ words = count_df.to_dict(orient="records")
 
 
 # ----------------------------
-# D3 Word Cloud HTML
+# D3 Word Cloud HTML (NO f-string)
 # ----------------------------
-def wordcloud_html(words, palette, rotate_mode):
-    payload = {"words": words, "palette": palette, "rotate_mode": rotate_mode}
-    data_json = json.dumps(payload)
+def wordcloud_html(words_list, palette_name, rotate_choice) -> str:
+    payload = {
+        "words": words_list,
+        "palette": palette_name,
+        "rotate_mode": rotate_choice,
+    }
+    data_json = json.dumps(payload, ensure_ascii=False)
 
-    return f\"\"\"
+    html = """
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.js"></script>
-<style>
-  body {{
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background: #fff;
-  }}
-  #wc {{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }}
-  .tooltip {{
-    position: absolute;
-    padding: 6px 10px;
-    background: rgba(0,0,0,0.75);
-    color: #fff;
-    border-radius: 6px;
-    font-size: 12px;
-    pointer-events: none;
-    line-height: 1.25;
-    max-width: 340px;
-  }}
-</style>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #fff;
+    }
+    #wc {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .tooltip {
+      position: absolute;
+      padding: 6px 10px;
+      background: rgba(0,0,0,0.78);
+      color: #fff;
+      border-radius: 6px;
+      font-size: 12px;
+      pointer-events: none;
+      line-height: 1.25;
+      max-width: 360px;
+    }
+  </style>
 </head>
 <body>
 <div id="wc"></div>
 
 <script>
-const payload = {data_json};
-const wordsIn = payload.words;
-const palette = payload.palette;
-const rotateMode = payload.rotate_mode;
+  const payload = __PAYLOAD__;
+  const wordsIn = payload.words;
+  const palette = payload.palette;
+  const rotateMode = payload.rotate_mode;
 
-// palettes
-const palettes = {{
-  set3: d3.schemeSet3,
-  tableau10: d3.schemeTableau10,
-  paired: d3.schemePaired
-}};
-const colors = palettes[palette] || d3.schemeSet3;
+  const palettes = {
+    set3: d3.schemeSet3,
+    tableau10: d3.schemeTableau10,
+    paired: d3.schemePaired
+  };
+  const colors = palettes[palette] || d3.schemeSet3;
+  const colorScale = d3.scaleOrdinal().range(colors);
 
-const colorScale = d3.scaleOrdinal().range(colors);
+  const width = 1100;
+  const height = 520;
 
-// Size: responsive-ish via viewBox; actual layout uses fixed numbers
-const width = 1100;
-const height = 520;
+  const maxCount = d3.max(wordsIn, d => d.count);
+  const minCount = d3.min(wordsIn, d => d.count);
 
-// Scale font size by count
-const maxCount = d3.max(wordsIn, d => d.count);
-const minCount = d3.min(wordsIn, d => d.count);
+  const fontScale = d3.scaleSqrt()
+    .domain([minCount, maxCount])
+    .range([14, 72]);
 
-const fontScale = d3.scaleSqrt()
-  .domain([minCount, maxCount])
-  .range([14, 72]);
-
-const words = wordsIn.map(d => {{
-  return {{
+  const words = wordsIn.map(d => ({
     text: d.text,
     count: d.count,
     size: fontScale(d.count)
-  }};
-}});
+  }));
 
-// Tooltip
-const tooltip = d3.select("body")
-  .append("div")
-  .attr("class", "tooltip")
-  .style("opacity", 0);
+  const tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
 
-// Rotation
-function rot() {{
-  if (rotateMode === "0° / 90°") {{
-    return (Math.random() < 0.25) ? 90 : 0;  // 25% rotated
-  }}
-  return 0;
-}}
+  function rot() {
+    if (rotateMode === "0° / 90°") {
+      return (Math.random() < 0.25) ? 90 : 0;
+    }
+    return 0;
+  }
 
-const layout = d3.layout.cloud()
-  .size([width, height])
-  .words(words)
-  .padding(4)
-  .rotate(rot)
-  .font("Helvetica")
-  .fontSize(d => d.size)
-  .on("end", draw);
+  const layout = d3.layout.cloud()
+    .size([width, height])
+    .words(words)
+    .padding(4)
+    .rotate(rot)
+    .font("Helvetica")
+    .fontSize(d => d.size)
+    .on("end", draw);
 
-layout.start();
+  layout.start();
 
-function draw(words) {{
-  const svg = d3.select("#wc").append("svg")
-    .attr("viewBox", "0 0 " + width + " " + height)
-    .attr("preserveAspectRatio", "xMidYMid meet")
-    .style("width", "100%")
-    .style("height", "auto");
+  function draw(words) {
+    const svg = d3.select("#wc").append("svg")
+      .attr("viewBox", "0 0 " + width + " " + height)
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .style("width", "100%")
+      .style("height", "auto");
 
-  const g = svg.append("g")
-    .attr("transform", "translate(" + (width/2) + "," + (height/2) + ")");
+    const g = svg.append("g")
+      .attr("transform", "translate(" + (width/2) + "," + (height/2) + ")");
 
-  g.selectAll("text")
-    .data(words)
-    .join("text")
-    .style("font-size", d => d.size + "px")
-    .style("fill", (d, i) => colorScale(i))
-    .style("font-family", "Helvetica")
-    .attr("text-anchor", "middle")
-    .attr("transform", d => "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")")
-    .text(d => d.text)
-    .on("mousemove", (event, d) => {{
-      tooltip
-        .style("opacity", 1)
-        .html("<b>" + d.text + "</b><br/>Frequenza: " + d.count)
-        .style("left", (event.pageX + 12) + "px")
-        .style("top", (event.pageY + 12) + "px");
-    }})
-    .on("mouseout", () => tooltip.style("opacity", 0));
-}}
+    g.selectAll("text")
+      .data(words)
+      .join("text")
+      .style("font-size", d => d.size + "px")
+      .style("fill", (d, i) => colorScale(i))
+      .style("font-family", "Helvetica")
+      .attr("text-anchor", "middle")
+      .attr("transform", d => "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")")
+      .text(d => d.text)
+      .on("mousemove", (event, d) => {
+        tooltip
+          .style("opacity", 1)
+          .html("<b>" + d.text + "</b><br/>Frequenza: " + d.count)
+          .style("left", (event.pageX + 12) + "px")
+          .style("top", (event.pageY + 12) + "px");
+      })
+      .on("mouseout", () => tooltip.style("opacity", 0));
+  }
 </script>
 </body>
 </html>
-\"\"\"
+"""
+    return html.replace("__PAYLOAD__", data_json)
 
 
 # ----------------------------
@@ -306,11 +288,8 @@ components.html(
     scrolling=False,
 )
 
-# ----------------------------
-# Description
-# ----------------------------
 st.caption(
     "La word cloud mostra le keyword estratte dalla colonna 'keywords'. "
-    "Ogni keyword viene separata in base al separatore scelto, aggregata per frequenza e visualizzata con dimensione proporzionale alla frequenza. "
+    "Le keyword vengono separate secondo il separatore scelto, aggregate per frequenza e visualizzate con dimensione proporzionale alla frequenza. "
     "Passa il mouse su una keyword per vedere la frequenza."
 )

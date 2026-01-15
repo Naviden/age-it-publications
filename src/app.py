@@ -8,12 +8,24 @@ import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent          # .../src
+REPO_DIR = BASE_DIR.parent                          # repo root
+
+DF_PATH  = REPO_DIR / "data" / "processed" / "chord_authors.csv"
+CEN_PATH = REPO_DIR / "data" / "processed" / "chord_area.csv"
+LOGO_PATH = BASE_DIR / "logo.jpg"                   # logo next to app.py
+
+df = pd.read_csv(DF_PATH)
+cen = pd.read_csv(CEN_PATH)
+
 
 # ----------------------------
 # Caricamento dati (come richiesto)
 # ----------------------------
-DF_PATH = "/Users/navid/Documents/1_Projects/0_Age-It/Our Tasks/Mario_report/data/processed/chord_authors.csv"
-CEN_PATH = "/Users/navid/Documents/1_Projects/0_Age-It/Our Tasks/Mario_report/data/processed/chord_area.csv"
+# DF_PATH = "/Users/navid/Documents/1_Projects/0_Age-It/Our Tasks/Mario_report/data/processed/chord_authors.csv"
+# CEN_PATH = "/Users/navid/Documents/1_Projects/0_Age-It/Our Tasks/Mario_report/data/processed/chord_area.csv"
 
 df = pd.read_csv(DF_PATH)   # deve contenere: authors_full
 cen = pd.read_csv(CEN_PATH) # deve contenere: full_name, Area_desc
@@ -318,7 +330,7 @@ st.set_page_config(layout="wide")
 
 # Logo in alto
 # Nota: metti logo.png nella stessa cartella di app.py (src/) oppure passa un path assoluto
-st.image("/Users/navid/Documents/1_Projects/0_Age-It/Our Tasks/Mario_report/data/logo.jpg", use_container_width=False, width=180)
+st.image(LOGO_PATH, use_container_width=False, width=180)
 
 st.title("Collaborazioni tra aree scientifiche")
 

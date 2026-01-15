@@ -129,6 +129,7 @@ tokens = (
     .explode()
     .astype(str)
     .str.strip()
+    .str.lower()   # <-- normalise case
 )
 
 tokens = tokens[tokens != ""]

@@ -99,7 +99,7 @@ show_percent_tooltip = st.sidebar.checkbox(
 
 show_percent_on_figure = st.sidebar.checkbox(
     "Mostra percentuali nel grafico",
-    value=False,
+    value=True,
     help="Se attivo, viene mostrata la percentuale su ogni fetta (se lo spazio lo consente).",
 )
 

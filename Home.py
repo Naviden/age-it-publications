@@ -53,7 +53,7 @@ with col_logo:
         st.image(str(LOGO_PATH), width=140)
 
 with col_title:
-    st.title("Topics")
+    st.title("Age-It: Prodotti scientifici")
     st.markdown(
         "<div style='color:#777;'>Seleziona una delle analisi disponibili</div>",
         unsafe_allow_html=True,
@@ -68,14 +68,14 @@ with left:
     st.markdown(
         """
         <div class="choice-box">
-          <h3>Analisi 1</h3>
-          <p>Prima analisi (placeholder).</p>
+          <h3>Topics</h3>
+          <p>Paper by topic.</p>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    if st.button("Apri Analisi 1", key="go_a1"):
-        st.switch_page("pages/1_Analisi_A.py")
+    if st.button("Apri", key="go_a1"):
+        st.switch_page("pages/1_Topics.py")
 
 with right:
     st.markdown(
@@ -90,5 +90,5 @@ with right:
         """,
         unsafe_allow_html=True,
     )
-    if st.button("Apri Analisi 2", key="go_a2"):
+    if st.button("Apri", key="go_a2"):
         st.switch_page("pages/2_Collaborazioni_tra_aree_scientifiche.py")

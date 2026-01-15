@@ -107,6 +107,17 @@ rotate_mode = st.sidebar.selectbox(
     help="Se 0°/90°, una parte delle keyword viene ruotata di 90°.",
 )
 
+exclude_text = st.sidebar.text_area(
+    "Escludi keyword (una per riga)",
+    value="",
+    help="Inserisci le keyword da escludere. Il confronto è case-insensitive.",
+)
+exclude_set = {
+    x.strip().lower()
+    for x in exclude_text.splitlines()
+    if x.strip()
+}
+
 
 # ----------------------------
 # Build keyword frequency table
@@ -131,7 +142,9 @@ tokens = (
     .str.strip()
     .str.lower()   # <-- normalise case
 )
-
+if exclude_set:
+    tokens = tokens[~tokens.isin(exclude_set)]
+    
 tokens = tokens[tokens != ""]
 tokens = tokens[~tokens.str.fullmatch(r"[\W_]+", na=False)]
 tokens = tokens[tokens.str.split().str.len() <= max_phrase_words]

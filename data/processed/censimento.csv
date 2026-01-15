@@ -1,0 +1,708 @@
+Nome,Cognome,Codice fiscale,SSD,Email,age
+Daniela,Trisciuoglio,TRSDNL73R55H501N,BIOS-10/A,daniela.trisciuoglio@cnr.it,53
+Serena ,Sanna,SNNSRN80S55H856X,BIOS-04/A,serena.sanna@cnr.it,46
+Francesca ,Cavalcanti,CVLFNC61T56D086E,BIOS-11/A,francesca.cavalcanti@irib.cnr.it,65
+Paolo ,Barsocchi,BRSPLA78S27G702C,INFO-01/A,paolo.barsocchi@isti.cnr.it,48
+Antonino,Colanzi,CLNNNN64B29E435X,BIOS-10/A,antonino.colanzi@cnr.it,62
+Maria Grazia,Andreassi,NDRMGR66P66C349Y,MEDS-07/B,mariagrazia.andreassi@cnr.it,60
+Alessandro ,Leone,LNELSN74P07L682M,IINF-05/A,alessandro.leone@cnr.it,52
+Lorenzo Clemente,Spinelli,SPNLNZ70B04F205W,PHYS-01/A,lorenzoclemente.spinelli@cnr.it,56
+Alessandro ,Sale,SLALSN77L19F979I,BIOS-06/A,alessandro.sale@in.cnr.it,49
+Marco ,Sacco,SCCMRC68C01F205O,INFO-01/A,marco.sacco@stiima.cnr.it,58
+Vito ,Pirrelli,PRRVTI61S01A662V,GLOT-01/B,vito.pirrelli@cnr.it,65
+Giuseppe Pio,Dachille,DCHGPP85D24H926H,ECON-01/A,giuseppepio.dachille@inps.it,41
+Monica Pia Cecilia,Paiella,PLLMCP69L62F205I,ECON-01/A,monicapiacecilia.paiella@inps.it,57
+Diego ,Pieroni,PRNDGI67P03C773B,MATH-06/A,diego.pieroni@inps.it,59
+Francesco,Maura,MRAFNC92R06F257L,ECON-02/A,francesco.maura@unibocconi.it,34
+Guido ,Alessandri,LSSGDU79H21A345G,PSIC-03/B,guido.alessandri@uniroma1.it,47
+Alessio,Tamburrano,TMBLSS78B17H501A,IIET-01/A,alessio.tamburrano@uniroma1.it,48
+Gabriella ,Minchiotti,MNCGRL65A66F839V,BIOS-13/A,gabriella.minchiotti@igb.cnr.it,61
+Mattia,Vitiello,VTLMTT66C18L259K,GSPS-08/A,m.vitiello@irpps.cnr.it,60
+Maddalena,Illario,LLRMDL67A62H703O,MEDS-02/A,illariomaddalena@gmail.com,59
+Luca ,Francioso,FRNLNN76E30Z133J,PHYS-06/A,lucanunzio.francioso@cnr.it,50
+Greta ,Falavigna,FLVGRT79T50B885Y,ECON-04/A,greta.falavigna@cnr.it,47
+Luisa ,Errichiello,RRCLSU81H54F839Q,ECON-08/A,luisa.errichiello@cnr.it,45
+Veronica,De Rosa,DRSVNC79S54F839X,MEDS-04/A,veronica.derosa@cnr.it,47
+Fabrizio,D'Adda di Fagagna,DDDFRZ66L28L483G,BIOS-11/A,fabrizio.dadda@igm.cnr.it,60
+Marcello,Melone,MLNMCL70A08D488X,BIOS-06/A,m.melone@inrca.it,56
+Antonella,Golino,GLNNNL83M51A783L,GSPS-05/A,antonella.golino@unimol.it,43
+Andrea,Principi,PRNNDR66M26A271P,GSPS-05/A,a.principi@inrca.it,60
+Elisabetta,Barbi,BRBLBT67E45H501L,STAT-03/A,elisabetta.barbi@uniroma1.it,59
+Asya,Bellia,BLLSYA90C52G702R,ECON-01/A,asya.bellia@unibocconi.it,36
+Cristina,Gagliardi,GGLCST65E54A271J,GSPS-05/A,c.gagliardi@inrca.it,61
+CLAUDIA MORGANA,CASCIONE,CSCCDM78H67A662K,GIUR-11/A,claudiamorgana.cascione@uniba.it,48
+Giovanni,Lamura,LMRGNN63E02A271D,GSPS-07/A,g.lamura@inrca.it,63
+Fabrizia,Lattanzio ,LTTFRZ66D69G878Z,MEDS-05/A,f.lattanzio@inrca.it,60
+Valentina,Ricci ,RCCVNT70M48H501X,MATH-06/A,valentina.ricci@inps.it,56
+Irene,Mammi,MMMRNI83R67I496F,ECON-03/A,Irene.mammi@unive.it,43
+Valeria,Maggian,MGGVLR85L71L840V,ECON-03/A,valeria.maggian@unive.it,41
+Claudia,Irti ,RTICLD73L69H501W,GIUR-12/A,claudia.irti@unive.it,53
+Paolo,Villari,VLLPLA61D08F839E,MEDS-24/B,paolo.villari@uniroma1.it,65
+Antonio Domenico,Procopio,PRCNND56D08I872P,MEDS-02/B,A.PROCOPIO@inrca.it,70
+Lorena,Rossi,RSSLRN63H67C770Z,IINF-05/A,l.rossi@inrca.it,63
+Giuseppe,Pugliese,PGLGPP54S29H501F,MEDS-08/A,giuseppe.pugliese@uniroma1.it,72
+GIUSEPPE,RIVA ,RVIGPP67C29F205P,PSIC-01/A,giuseppe.riva@unicatt.it,59
+Gloria ,Moroni ,MRNGLR90M70G148C,ECON-01/A,gloria.moroni@unive.it,36
+Andrea,Corsonello,CRSNDR68D19D086U,MEDS-05/A,a.corsonello@inrca.it,58
+MARIO ALESSANDRO,BOCHICCHIO,BCHMLS64B04G942N,IINF-05/A,Mario.bochicchio@uniba.it,62
+Nicola,Baldini,BLDNCL56M12D612K,MEDS-26/D,nicola.baldini5@unibo.it,70
+Anita,De Rossi,DRSNTA52T63L407M,MEDS-02/A,anita.derossi@unipd.it,74
+Antonio  ,Cherubini,CHRNTN66L09I921H,MEDS-05/A,a.cherubini@inrca.it,60
+Maria Gabriellla,Melchiorre,MLCMGB60L66A271K,GSPS-08/A,g.melchiorre@inrca.it,66
+Fabiola,Olivieri,LVRFBL68R52D007H,MEDS-02/A,f.olivieri@univpm.it,58
+EMANUELE,MARZETTI ,MRZMNL73E30F499W,MEDS-05/A,emanuele.marzetti@unicatt.it,53
+Anna Maria Borghi,Borghi,BRGNMR64T52F257Z,PSIC-01/A,anna.borghi@uniroma1.it,62
+Maria,Argenti,RGNMRA58M56H501D,CEAR-09/A,maria.argenti@uniroma1.it,68
+Febo,Cincotti,CNCFBE70S04H501M,IBIO-01/A,febo.cincotti@uniroma1.it,56
+Rosa,Casillo,CSLRSO67T62C495U,GIUR-04/A,rcasillo@unina.it,59
+Cristina,Giuliani,GLNCST86C58C573G,BIOS-03/B,cristina.giuliani2@unibo.it,40
+Carlos Juan,Chiatti,CHTCLS79P16Z131T,MEDF-01/A,info@ageit.it,47
+Fabio,Viviano,VVNFBA94C03M208Z,STAT-04/A,fabio.viviano@unical.it,32
+Sara,Santini,SNTSRA75A52A271G,GSPS-07/A,s.santini2@inrca.it,51
+Cinzia,Conti,CNTCNZ72H43H501Q,STAT-03/A,ciconti@istat.it,54
+Cinzia,Castagnaro,CSTCNZ74P41H501C,STAT-01/A,cicastag@istat.it,52
+Rabih,Chattat,CHTRBH58E25Z229S,PSIC-04/B,rabih.chattat@unibo.it,68
+CARMINE,CLEMENTE,CLMCMN68E12L858D,GSPS-05/A,CARMINE.CLEMENTE@UNIBA.IT,58
+Luigi,Bubacco,BBCLGU63R13L736C,BIOS-09/A,luigi.bubacco@unipd.it,63
+Stefano,Campostrini,CMPSFN62T26L736C,STAT-03/B,stefano.campostrini@unive.it,64
+MARIA LUISA,MANCUSI ,MNCMLS69B62F205Y,ECON-02/A,marialuisa.mancusi@unicatt.it,57
+PIERMARCO,AROLDI ,RLDPMR61L29F205M,GSPS-06/A,piermarco.aroldi@unicatt.it,65
+Margherita,Borella,BRLMGH69A66G224T,ECON-03/A,margherita.borella@unito.it,57
+Ylenia,Brilli ,BRLYLN83E42F656M,ECON-01/A,ylenia.brilli@unive.it,43
+Simone,Ghislandi,GHSSMN75P26L388O,ECON-03/A,simone.ghislandi@unibocconi.it,51
+Stefania,Basili,BSLSFN61A57H501V,MEDS-05/A,stefania.basili@uniroma1.it,65
+Fanny,Ficuciello,FCCFNY74R60F912H,IINF-04/A,fanny.ficuciello@unina.it,52
+Giusepppe ,Rengo,RNGGPP78S30F839T,MEDS-05/A,Giuseppe.rengo@unina.it,48
+Giovanna,Boccuzzo,BCCGNN67M66G224Z,STAT-03/B,giovanna.boccuzzo@unipd.it,59
+Agar,Brugiavini,BRGGRA58H61I653V,ECON-01/A,brugiavi@unive.it,68
+Paolo ,Berta,BRTPLA74L23B157D,ECON-03/A,paolo.berta@unimib.it,52
+Laura ,Terzera,TRZLRA64E49F205T,STAT-03/A,laura.terzera@unimib.it,62
+Carlo,Viscomi,VSCCLF74C27L400G,BIOS-14/A,carlo.viscomi@unipd.it,52
+CLAUDIO,LUCIFORA ,LCFCLD60B21H501N,ECON-01/A,claudio.lucifora@unicatt.it,66
+Poalo,Marzullo,MRZPLA66H28F839C,MEDS-13/A,paolo.marzullo@med.uniupo.it,60
+Stefania,Lucia,LCUSFN95B47L424O,PSIC-02/A,stefi.lucia7@gmail.com,31
+Jacopo,Lenzi,LNZJCP85T31A944O,MEDS-24/A,jacopo.lenzi2@unibo.it,41
+Corrado,Caiazzo,CZZCRD64A14F839O,MEDS-22/A,corrado.caiazzo@unimol.it,62
+Guglielmo,Weber,WBRGLL58P14D612G,ECON-05/A,guglielmo.weber@unipd.it,68
+Diego ,Longo ,LNGDGI85M01D612U,MEDS-26/C,diego.longo@unifi.it,41
+Christian,Napoli,NPLCRS85M14C351D,IINF-05/A,CNAPOLI@DIAG.UNIROMA1.IT,41
+Mattia,Stival,STVMTT92H23C957Y,STAT-03/B,mattia.stival@unive.it,34
+ROMA ,ENRICO,RMONRC94P23F443M,STAT-01/A,enrico.roma@unibo.it,32
+Emilia,Di Lorenzo,DLRMLE61B54F839U,STAT-04/A,diloremi@unina.it,65
+Erminia,Attaianese,TTNRMN64H51L259C,CEAR-08/C,erminia.attaianese@unina.it,62
+Guido,Iaccarino,CCRGDU67C05F839G,MEDS-05/A,guiaccar@unina.it,59
+Nicola,Ferrara,FRRNCL53B02A509S,MEDS-05/A,nicferra@unina.it,73
+MARIA,GRANO,GRNMRA61R56A053Z,BIOS-13/A,maria.grano@uniba.it,65
+CLAUDIA,MANZI ,MNZCLD75M50H501Z,PSIC-03/A,claudia.manzi@unicatt.it,51
+Fabio ,Lucidi,LCDFBA65T01Z221G,PSIC-01/C,fabio.lucidi@uniroma1.it,61
+Alessandro ,Laviano,LVNLSN63D02H501B,MEDS-05/A,alessandro.laviano@uniroma1.it,63
+Stefano,Gianni,GNNSFN76A27H501Z,BIOS-08/A,stefano.gianni@uniroma1.it,50
+Francesca,Zantomio,ZNTFNC78T61G224O,ECON-03/A,francesca.zantomio@unive.it,48
+Luisa, Corazza,CRZLSU70L44A944A,GIUR-04/A,luisa.corazza@unimol.it,56
+LORENZO,CAPPELLARI ,CPPLNZ69P16F205P,ECON-01/A,lorenzo.cappellari@unicatt.it,57
+Emanuela Maria,Sala,SLAMLM70L66F704V,GSPS-05/A,emanuela.sala@unimib.it,56
+GRAZIANO,PESOLE ,PSLGZN59A02A662R,BIOS-08/A,graziano.pesole@uniba.it,67
+Sergio,Davinelli,DVNSRG81H01B519X,BIOS-09/A,sergio.davinelli@unimol.it,45
+Salvatore,Garofalo,GRFSVT98D27D086S,IIND-03/A,salvatore.garofalo@unical.it,28
+Tiziana,Ferrante,FRRTZN65R52D643E,CEAR-08/C,tiziana.ferrante@uniroma1.it,61
+Zaccaria,Del Prete,DLPZCR63L05H501T,IMIS-01/A,zaccaria.delprete@uniroma1.it,63
+NICOLA,QUARANTA,QRNNLN72E30A662B,MEDS-18/A,nicolaantonioadolfo.quaranta@uniba.it,54
+Giuseppe,Di Felice,DFLGPP85P12L113O,GEOG-01/A,giuseppe.difelice@unimol.it,41
+Riccardo,Pronzato,PRNRCR93C12A052V,GSPS-05/A,riccardo.pronzato@unibo.it,33
+Giuseppe,Calcagno,CLCGPP68S11F839Z,MEDF-01/A,giuseppe.calcagno@unimol.it,58
+Anna,Velyka,VLYNNA89M56Z138J,ECON-01/A,anna.velyka@unimib.it,37
+VALERIA,HASENMAJER,HSNVLR87L68H501Q,MEDS-08/A,valeria.hasenmajer@uniroma1.it,39
+Andrea,Ballerini,BLLNDR98T09D612K,STAT-03/A,andrea.ballerini1@unifi.it,28
+ANTONIO ,FRIGERI,FRGNTN61M03A662W,BIOS-06/A,antonio.frigeri@uniba.it,65
+Francesca,Cecchi,CCCFNC66D46D612G,MEDS-19/B,francesca.cecchi@unifi.it,60
+Giuseppe ,Passarino,PSSGPP64A07D086R,BIOS-14/A,giuseppe.passarino@unical.it,62
+Alessandro,Volpe,VLPLSN94A12A662O,PHIL-03/A,volpe.alessandro1@hsr.it,32
+Federica,Agosta,GSTFRC78D41F205R,MEDS-12/A,agosta.federica@hsr.it,48
+ELISABETTA,VENEZIA,VNZLBT68D52E038N,ECON-04/A,ELISABETTA.VENEZIA@UNIBA.IT,58
+Alessandra,De Rose,DRSLSN63P43G478P,STAT-03/A,alessandra.derose@uniroma1.it,63
+Mattia ,Dimitri ,DMTMTT88H10D612S,IBIO-01/A,mattia.dimitri@unifi.it,38
+Salvatore ,Strozza,STRSVT63M22D708M,STAT-03/A,strozza@unina.it,63
+Giustina,Orientale Caputo,RNTGTN63C71F839Q,GSPS-08/A,oriental@unina.it,63
+Pasquale ,Arpaia,RPAPQL61B02F839V,IMIS-01/B,Pasquale.arpaia@unina.it,65
+Lorenzo,Mercurio,MRCLNZ73C23F839W,ECON-08/A,lorenzo.mercurio@unina.it,53
+Andrea,Antonini,NTNNDR96M23G535D,GSPS-04/C,andrea.antonini@unicatt.it,30
+Sara,Zaniboni,ZNBSRA78E57E289A,PSIC-03/B,sara.zaniboni4@unibo.it,48
+Marco,Alberio,LBRMRC79S06F205H,GSPS-08/A,Marco.alberio2@unibo.it,47
+Marco,Albertini,LBRMRC75M25L781W,GSPS-08/A,marco.albertini2@unibo.it,51
+Francesca ,Pongiglione,PNGFNC80P59D969B,PHIL-03/A,fra.pongi@gmail.com,46
+MARIA,CARELLA,CRLMRA69E62A662M,STAT-03/A,maria.carella1@uniba.it,57
+Andrea,Graziani,GRZNDR58C11E625X,BIOS-07/A,andrea.graziani@unito.it,68
+Roberto ,Baiocco,BCCRRT73E11H501X,PSIC-02/A,roberto.baiocco@uniroma1.it,53
+MICHELE,VIRGOLESI,VRGMHL81B18H931X,MEDS-24/C,MICHELE.VIRGOLESI@UNINA.IT,45
+Cristiana,Abbafati,BBFCST70E54I992A,ECON-01/A,cristiana.abbafati@uniroma1.it,56
+FRANCESCO,PAGNINI ,PGNFNC83P16D416V,PSIC-04/A,francesco.pagnini@unicatt.it,43
+CAMILLO,MARRA ,MRRCLL62E26H501T,PSIC-01/B,camillo.marra@unicatt.it,64
+Dario,Raspanti,RSPDRA87D18D612N,GSPS-08/A,dario.raspanti@unifi.it,39
+FEDERICA ANDREA,CERASUOLO,CRSFRC88A57Z605W,MEDS-26/D,fe.cerasuolo@gmail.com,38
+ALESSANDRA,DI BELLO,DBLLSN95L52F839G,STAT-03/A,alessandra.dibello@unifi.it,31
+ADRIANO,FONZINO,FNZDRN87P17L049B,BIOS-08/A,adriano.fonzino@uniba.it,39
+Gianluca,Fiorentini,FRNGLC62L09D458K,ECON-03/A,gianluca.fiorentini@unibo.it,64
+Maria Francesca,Freda,FRDMFR65T69F839G,PSIC-04/A,fmfreda@unina.it,61
+Alberto,Dal Molin,DLMLRT77D26A859L,MEDS-24/C,alberto.dalmolin@med.uniupo.it,49
+Loris,Vergolini,VRGLRS79L18L378R,GSPS-05/A,loris.vergolini@unibo.it,47
+Sarah,Damanti,DMNSRH84E58A662Y,MEDS-09/B,damanti.sarah@hsr.it,42
+Giada,Sene,SNEGDI97C62D086W,BIOS-14/A,giada.sena@unical.it,29
+Pasquale,Mone,MNOPQL86T07A509I,MEDS-05/A,pasquale.mone@unimol.it,40
+Valerio,Rotondo,RTNVLR87T10F839X,GIUR-01/A,VALERIO.ROTONDO@UNIMOL.IT,39
+CHIARA,ANTONUCCI,NTNCHR91D48L117U,PSIC-02/A,chiara.antoniucci@uniroma1.it,35
+Cristina,Mele,MLECST71S46F839M,ECON-07/A,cristina.mele@unina.it,55
+Flavia ,Valtorta,VLTFLV57D52F205V,BIOS-11/A,valtorta.flavia@hsr.it,69
+Luca,Rampoldi,RMPLCU69P17H264B,MEDS-01/A,rampoldi.luca@hsr.it,57
+LEONARDO ,BENCIVENGA,BNCLRD90S29F839O,MEDS-05/A,leonardobencivenga@gmail.com,36
+Marianna ,Talia,TLAMNN92S51D086I,MEDS-02/A,marianna.talia@unical.it,34
+VINCENZO,SOLFRIZZI,SLFVCN61B24A662Y,MEDS-05/A,vincenzo.solfrizzi@uniba.it,65
+VALERIA,DI COMITE,DCMVLR71D45D643K,GIUR-10/A,valeria.dicomite@uniba.it,55
+Sarah,Songhorian,SNGSRH87A47F205O,PHIL-03/A,songhorian.sarah@unisr.it,39
+Chukwuma,Okoye,KYOCKW86R04D612Z,MEDS-05/A,chukwuma.okoye@unimib.it,40
+Stefano,Ricciardi,RCCSFN64R19F839A,INFO-01/A,stefano.ricciardi@unimol.it,62
+Giuseppe ,Bellelli,BLLGPP63A29B157A,MEDS-05/A,giuseppe.bellelli@unimib.it,63
+Bianca,Monachesi,MNCBNC89B57H501Z,PSIC-01/B,Bmonache@sissa.it,37
+Laura,Santi Amantini,SNTLRA92R63D969X,GSPS-01/A,laura.santi_amantini@uniupo.it,34
+ANGELA,PALOMBA,PLMNGL91H65C129Y,MEDS-19/B,angela.palomba@unina.it,35
+Diletta,Barbiani,BRBDTT90T43H501P,PSIC-04/B,diletta.barbiani@unicatt.it,36
+Cellot ,Giada,CLLGDI81T41C957U,BIOS-06/A,cellot@sissa.it,45
+Luca,Moretti,MRTLCU97M04F205H,CHEM-05/A,luca.moretti1@unimib.it,29
+Roberta,Sala,SLARRT64L44C139A,GSPS-01/A,sala.roberta@unisr.it,62
+Cristina, Airoldi,RLDCST79B53A794C,CHEM-05/A,cristina.airoldi@unimib.it,47
+SARA, TROLESE ,TRLSRA91M42L407R,PSIC-01/A,sara.trolese@unibo.it,35
+Leonardo,Tenori,TNRLRD77E24G999C,CHEM-03/A,leonardo.tenori@unifi.it,49
+Roberto,Impicciatore,MPCRRT72T05L113R,STAT-03/A,roberto.impicciatore@unibo.it,54
+Carlos Javier ,Gil Hernandez ,GLHCLS89T22Z131O,STAT-03/A,carlos.gil@unifi.it,37
+Elena ,Bellini ,BLLLNE87B46A564T,CEAR-08/C,elena.bellini@unifi.it,39
+ANNA MARIA,MARTONE,MRTNMR87A49H501N,MEDS-09/A,annamaria.martone@unicatt.it,39
+Elisa,Bientinesi,BNTLSE93D41G843V,MEDS-02/A,elisa.bientinesi@unifi.it,33
+Giulia,Giupponi,GPPGLI88E51D325N,ECON-03/A,giulia.giupponi@unibocconi.it,38
+Lorenzo,Frassineti,FRSLNZ92R12D612D,IBIO-01/A,lorenzo.frassineti@unifi.it,34
+ROBERTA,PACE,PCARRT71A58A662P,STAT-03/B,roberta.pace@uniba.it,55
+FRANCESCA,ZANASI,ZNSFNC90P53F257N,GSPS-08/A,francesca.zanasi5@unibo.it,36
+Chiara Ludovica,Comolli,CMLCRL84T50C816S,STAT-03/A,chiara.comolli@unibo.it,42
+Miriam,Capri,CPRMRM64R63D166U,MEDS-02/A,miriam.capri@unibo.it,62
+Matteo,DE PAMPHILIS,DPMMTT88D07A944O,GIUR-01/A,matteo.depamphilis@unive.it,38
+ANNA,PATERNO,PTRNNA64D68A662K,STAT-03/A,anna.paterno@uniba.it,62
+Daniele  Luigi,Romano,RMNDLL84L06F205T,PSIC-01/C,daniele.romano@unimib.it,42
+Felicia,Fiore,FRIFLC81M48A225L,PSIC-01/A,felicia.fiore@unipd.it,45
+Sara,Nanetti,NNTSRA88P43A944S,GSPS-06/A,sara.nanetti@unicatt.it,38
+ALICE,LOMONACO,LMNLCA83M66A859C,GSPS-08/A,alice.lomonaco2@unibo.it,43
+Daniela,Grignoli,GRGDNL67D66B519L,GSPS-05/A,grignoli@unimol.it,59
+Elisa,Brini,BRNLSE88P62G843L,STAT-03/A,elisa.brini@unifi.it,38
+Annalisa,Donno,DNNNLS83R63D862V,STAT-03/B,donno@stat.unipd.it,43
+Frida,Milella,MLLFRD85P56L049D,IINF-01/A,frida.milella@unimib.it,41
+Gustavo,De Santis,DSNGTV60M31L219E,STAT-03/A,gustavo.desantis@unifi.it,66
+Claudia,Salvatore,SLVCLD68S68F839U,ECON-06/A,Claudia.salvatore@unina.it,58
+Rossella ,Miglio,MGLRSL65H56H501P,STAT-01/A,rossella.miglio@unibo.it,61
+Enrico,Boni,BNONRC77D09D612T,IINF-01/A,enrico.boni@unifi.it,49
+Margherita ,Romiti,RMTMGH00B54D612D,IBIO-01/A,margherita.romiti@unifi.it,126
+Sella ,Enrico,SLLNRC89E23F979U,PSIC-01/A,enrico.sella@unipd.it,37
+ELEONORA,TRAPPOLINI,TRPLNR89L67C773O,STAT-03/A,eleonora.trappolini@uniroma1.it,37
+LUCIA,ZANOTTO,ZNTLCU87T62G224D,STAT-03/A,lucia.zanotto@unibo.it,39
+Lorenzo ,Pugi ,PGULNZ95B07A564W,IINF-04/A,lorenzo.pugi@unifi.it,31
+Francesca,Barone,BRNFNC97E58D086W,BIOS-07/A,francesca.barone@unical.it,29
+Cristina,Calvi,CLVCST78R67B573N,GSPS-05/A,cristina.calvi@uniupo.it,48
+Cristina,Ugolini,GLNCST69H58A944W,ECON-03/A,cristina.ugolini@unibo.it,57
+Alessandro,Silvani,SLVLSN75M06H199F,BIOS-06/A,alessandro.silvani3@unibo.it,51
+Antonio,Totaro,TTRNTN84E21H926E,MEDS-07/B,antonio.totaro@unimol.it,42
+Antonio,Cuccaro,CCCNTN86E14B963B,IINF-02/A,antonio.cuccaro@unical.it,40
+Silvio,Sonnati,SNNSLV84E29D786E,GIUR-07/A,silvio.sonnati@unibocconi.it,42
+VALERIA,ALLOCCA,LLCVLR85H48F839S,GIUR-04/A,valeria.allocca@unina.it,41
+GIULIA,GUIDI,GDUGLI95L62A785B,ECON-03/A,giulia.guidi26@unibo.it,31
+Benedetta,Nacmias,NCMBDT60S58D612M,MEDS-12/A,benedetta.nacmias@unifi.it,66
+Paola,Costelli,CSTPLA63D62L219A,MEDS-02/A,paola.costelli@unito.it,63
+ALBA,ROVIELLO,RVLLBA92E55B963Z,STAT-04/A,alba.roviello@unina.it,34
+Manuela ,Stranges,STRMNL76A70D086L,STAT-03/A,manuela.stranges@unical.it,50
+Paola,Canale,CNLPLA95A42A486F,MEDS-07/B,paola.canale@santannapisa.it,31
+Vanna,Boffo,BFFVNN59S50E202W,PAED-01/A,vanna.boffo@unifi.it,67
+Stefano ,Salvioli,SLVSFN66D16B819H,MEDS-02/A,stefano.salvioli@unibo.it,60
+Tiziana,Nazio,NZATZN71H51L219X,GSPS-05/A,tiziana.nazio@uniupo.it,55
+Spinello ,Gioi,SPNGIO98T43A001L,MEDF-01/A,gioi.spinello@phd.unipd.it,28
+GABRIELE,CHELINI,CHLGRL87T19E715I,BIOS-09/A,gabriele.chelini@in.cnr.it,39
+Pasquale ,Giacobbe,GCBPQL86M10E041Z,ECON-02/A,pasquale.giacobbe@unical.it,40
+ILARIA,CHIRICO,CHRLRI87P48C741S,PSIC-04/B,ilaria.chirico2@unibo.it,39
+Marta,Pittavino,PTTMRT87M50D205Q,STAT-01/A,marta.pittavino@unive.it,39
+Alice,Masini,MSNLCA93B57E463O,MEDS-24/B,alice.masini@uniupo.it,33
+PIETRO,BELLONI,BLLPTR94E01G224N,STAT-03/B,pietro.belloni@unipd.it,32
+MARIANGELA,PERILLO,PRLMNG96D66F839J,CEAR-08/C,mariangela.perillo@unina.it,30
+Alessandra,Bigi,BGILSN90E63A390R,BIOS-07/A,alessandra.bigi@unifi.it,36
+Cecilia,Tomassini,TMSCCL68E62H501P,STAT-03/A,cecilia.tomassini@unimol.it,58
+Elvira,Filicetti,FLCLVR86R63D086K,MEDS-05/A,f.filicetti@inrca.it,40
+Dimitri,Belli,BLLDTR79D21L833U,INFO-01/A,dimitri.belli@isti.cnr.it,47
+Luigi ,Bruno,BRNLGU74R25D086Y,IIND-03/A,luigi.bruno@unical.it,52
+Emilio ,Russo,RSSMLE79H20D086B,STAT-04/A,EMILIO.RUSSO@UNICAL.IT,47
+Elena,Pirani,PRNLNE77T59C469V,STAT-03/A,elena.pirani@unifi.it,49
+Stefania,Bandini,BNDSFN56M45H720P,INFO-01/A,stefania.bandini@unimib.it,70
+Matteo ,Franchi,FRNMTT86T07F205S,MEDS-24/A,matteo.franchi@unimib.it,40
+Francesca,Gasparini,GSPFNC71R61F205O,INFO-01/A,francesca.gasparini@unimib.it,55
+Debora,Daddi,DDDDBR94A44G752F,PAED-01/A,debora.daddi@unifi.it,32
+Luca,Busetto,BSTLCU61S01L736M,MEDS-08/C,luca.busetto@unipd.it,65
+Luisa,Ricci,RCCLSU93T49A564T,BIOS-07/A,Ricci.luisa@hsr.it,33
+Ainhoa,Viana Alzola,VNLNHA98L62F839T,BIOS-11/A,Ainhoa.viana@hsr.it,28
+Riaz,Majid,RZIMJD94C05Z236X,IINF-05/A,majid.riaz@dimes.unical.it,32
+Massimo ,Costabile,CSTMSM70S27D086S,STAT-04/A,massimo.costabile@unical.it,56
+CHIARA,BONTEMPO,BNTCHR98M67F158G,MEDS-02/A,chiara.bontempo4@unibo.it,28
+Aleksandra,Torbica,TRBLSN75R42Z118V,ECON-06/A,aleksandra.torbica@unibocconi.it,51
+Lorenzo,Neri,NRELNZ97E12G713U,BIOS-10/A,lorenzo.neri@unifi.it,29
+ALESSIA,VALMORI,VLMLSS94T49D704R,PSIC-03/A,alessia.valmori1@unicatt.it,32
+Michele,Maccarini,MCCMHL99T30A182W,ECON-06/A,michele.maccarini@unicatt.it,27
+Nancy,Zambon,ZMBNCY87S57I531F,ECON-05/A,nancy.zambon@unipd.it,39
+Enrico,Biale,BLINRC81P29A984H,GSPS-01/A,enrico.biale@uniupo.it,45
+Alessandro Ovidio Paris,Ramalli,RMLLSN83R21G999T,IINF-01/A,alessandro.ramalli@unifi.it,43
+Giulia,Ferrarese,FRRGLI91C71L736G,BIOS-09/A,giulia.ferrarese.4@phd.unipd.it,35
+Gabriella,Piscopo,PSCGRL83H56F839C,STAT-04/A,GABRIELLA.PISCOPO@unina.it,43
+Emilio,CAMELI,CMLMLE96L31B519H,STAT-02/A,e.cameli@studenti.unimol.it,30
+Rosamaria ,Lappano,LPPRMR82T62D086R,MEDS-02/A,rosamaria.lappano@unical.it,44
+Arianna,Fusaro,FSRRNN71L67G224A,GIUR-01/A,arianna.fusaro@unipd.it,55
+Chiara,Rapallini,RPLCHR70E43G702Y,ECON-03/A,chiara.rapallini@unifi.it,56
+Salierno,Martina,SLRMTN96P67F138U,STAT-03/B,martina.salierno@unipd.it,30
+Navid,Nobani,NBNNVD87P21Z224J,IINF-05/A,navid.nobani@unimib.it,39
+Anna,Galeotti,GLTNLS53C69A794C,GSPS-01/A,elisabetta.galeotti@uniupo.it,73
+Lorenzo,Schiavon,SCHLNZ94M18G224Q,STAT-01/A,lorenzo.schiavon@unive.it,32
+Chiara ,Verbano,VRBCHR70T51F443U,IEGE-01/A,chiara.verbano@unipd.it,56
+Giulia,Sautariello,STRGLI96E68G999T,BIOS-06/A,giulia.sautariello@unifi.it,30
+Francesca Romana,Loberto,LBRFNC75P70G535E,PAED-01/A,f.loberto@campus.unimib.it,51
+Federico Emanuele,Pozzi,PZZFRC91D20F205R,MEDS-26/A,F.pozzi26@campus.unimib.it,35
+MATTIA,LAFFRANCHI,LFFMTT90R30B157T,MEDS-02/A,mattia.laffranchi@uniroma1.it,36
+Daniela,Capello,CPLDNL70S54L219J,BIOS-09/A,daniela.capello@uniupo.it,56
+Matteo ,Pelagatti,PLGMTM72B28D198I,STAT-02/A,matteo.pelagatti@unimib.it,54
+Fabrizio,Chiti,CHTFRZ71L07D612X,BIOS-07/A,fabrizio.chiti@unifi.it,55
+Erika,Di Domenico,DDMRKE97P46I348J,BIOS-11/A,didomenico.erika@hsr.it,29
+Guglielmo,Bonaccorsi,BNCGLL65S17A561E,MEDS-24/B,guglielmo.bonaccorsi@unifi.it,61
+Francesca,Tosi,TSOFNC61R44D612B,CEAR-08/D,francesca.tosi@unifi.it,65
+Gessica,Vella,VLLGSC87T45C726I,ECON-01/A,gessica.vella@unical.it,39
+Gloria,Zuccarelli,ZCCGLR92H47F965H,GSPS-01/A,gloria.zuccarelli@uniupo.it,34
+ROSA,GATTI,GTTRSO75B53G812A,GSPS-07/A,rosa.gatti@unina.it,51
+Federico,DE LUCA ,DLCFRC86A30D325P,STAT-04/A,federico.deluca@unive.it,40
+Alessandra,Sorrentino ,SRRLSN93B50H501T,IINF-01/A,alessandra.sorrentino@unifi.it,33
+ONOFRIO,VALENTE,VLNNFR91M09B180Z,BIOS-06/A,onofrio.valente@uniba.it,35
+Aiman ,Rashid,RSHMNA88D08Z326V,IIND-06/B,aiman.rashid@unifi.it,38
+Federico,Carpi,CRPFRC75B10G702O,IBIO-01/A,federico.carpi@unifi.it,51
+Giammarco,Alderotti,LDRGMR90M29G999T,STAT-03/A,giammarco.alderotti@unifi.it,36
+Cristina,Banchi,BNCCST65S46B036S,PAED-02/B,cristina.banchi@unifi.it,61
+Maria Caterina ,Mannone,MNNMCT85R58G273M,IINF-05/A,maria.mannone@icar.cnr.it,41
+Elena,Allegri,LLGLNE58P56D150O,GSPS-05/A,elena.allegri@uniupo.it,68
+Andrea,MANNI,MNNNDR75L21B936A,IINF-05/A,andrea.manni@cnr.it,51
+Nicoletta,Setola,STLNLT77C41D705H,CEAR-08/C,nicoletta.setola@unifi.it,49
+Antonio,Lanatà,LNTNTN74P16C352A,IBIO-01/A,antonio.lanata@unifi.it,52
+Enrico,Milan,MLNNRC85D30H620C,BIOS-08/A,milan.enrico@hsr.it,41
+Silvia,Giunco,GNCSLV73S56D325X,MEDS-02/A,silvia.giunco@unipd.it,53
+Davide Donato,RUSSO,RSSDDD94M02E335W,MATH-06/A,davide.russo@unimol.it,32
+MARIA LUISA,CINIGLIO,CNGMLS99E53F839K,GIUR-07/A,marialuisa.ciniglio@unina.it,27
+Gianluca,Aimaretti,MRTGLC66P11G674T,MEDS-08/A,gianluca.aimaretti@med.uniupo.it,60
+Sara,Pegoraro,PGRSRA96A56D869K,PSIC-02/A,s.pegoraro@campus.unimib.it,30
+Giuliano,Resce,RSCGLN85C31A783O,ECON-01/A,giuliano.resce@unimol.it,41
+Daniela,Monti,MNTDNL58E59F097L,MEDS-02/A,daniela.monti@unifi.it,68
+Jan,Mazza,MZZJNA92E14A944P,ECON-04/A,jan.mazza2@unibo.it,34
+Alessandra,Buja,BJULSN72L56G224W,MEDS-24/B,alessandra.buja@unipd.it,54
+Raffaele,Guetto,GTTRFL83M06D969N,STAT-03/A,raffaele.guetto@unifi.it,43
+Davide,Chicco,CHCDVD84R18D969F,INFO-01/A,davide.chicco@unimib.it,42
+Beatrice,Francalanci ,FRNBRC98P58A564P,IBIO-01/A,beatrice.francalanci@unifi.it,28
+Davide ,Cino,CNIDVD92R21D423D,PAED-01/A,davide.cino@unimib.it,34
+Roberta ,Daini,DNARRT69P67A794U,PSIC-01/B,roberta.daini@unimib.it,57
+ANGELA,RUSSO ,RSSNGL96M53C351S,PSIC-03/B,angela.russo18@unibo.it,30
+Marco,Linari,LNRMRC63T30D612D,BIOS-06/A,marco.linari@unifi.it,63
+Sara,Landini,LNDSRA72D59D612W,GIUR-03/A,sara.landini@unifi.t,54
+Chiara,Sasia,SSACHR98A47G999T,BIOS-14/A,chiara.sasia@unifi.it,28
+Michele,Bertani ,BRTMHL68H17L781J,GSPS-05/A,michele.bertani@unive.it,58
+ADRIANA,CERASUOLO,CRSDRN91L60F839J,GSPS-08/A,Adriana.cerasuolo@unina.it,35
+Fiorenzo ,Conti,CNTFNZ55M13Z110X,BIOS-06/A,f.conti@univpm.it,71
+RICCARDO,CALVANI,CLVRCR81S15H501B,MEDS-05/A,Riccardo.calvani@unicatt.it,45
+ANTONIO,PICONE,PCNNTN84M09F839T,MEDS-19/B,picanto84@gmail.com,42
+Annamaria ,Antona,NTNNMR93D47A124O,BIOS-07/A,annamaria.antona@uniupo.it,33
+Martina,Celidoni,CLDMTN84C45G224Z,ECON-03/A,martina.celidoni@unipd.it,42
+Manuel Alejandro,Montano Castillo,MNTMLL95H03Z605T,BIOS-11/A,manuelalejandro.montano@gmail.com,31
+Alessia,Vignoli,VGNLSS88M42D612Z,CHEM-03/A,alessia.vignoli@unifi.it,38
+Domenico ,De Giovanni,DGVDNC79M01D122Y,STAT-04/A,ddegiovanni@unical.it,47
+Fulvio ,Ricceri,RCCFLV80S26L219B,MEDS-24/B,fulvio.ricceri@unito.it,46
+Daniela,Carrillo,CRRDNL74D60D423Q,STAT-03/A,daniela.carrillo@unimib.it,52
+Fabio,Chillotti,CHLFBA96P25E281F,MATH-06/A,fabih1996math@gmail.com,30
+ MOSLEM ,RASHIDI,RSHMLM80A10Z224E,ECON-05/A,moslem.rashidi2@unibo.it,46
+JAMES,DAWE,DWAJMS91P20H501T,PSIC-01/C,james.dawe@uniroma1.it,35
+ROBERTA,MISURACA,MSRRRT85S48G273Q,STAT-03/B,roberta.misuraca@uniba.it,41
+Federica,Cretazzo,CRTFRC87M66L219Y,GSPS-05/A,federica.cretazzo@unimib.it,39
+Erika,Borella,BRLRKE73T59G535J,PSIC-01/A,erika.borella@unipd.it,53
+Fabio ,Mercorio,MRCFBA83S06I838N,IINF-05/A,fabio.mercorio@unimib.it,43
+Fabrizia,Mantovani,MNTFRZ75L52F205M,PSIC-01/A,FABRIZIA.MANTOVANI@UNIMIB.IT,51
+Nicola,CARAVAGGIO,CRVNCL90E05E435D,ECON-03/A,nicola.caravaggio@unimol.it,36
+MARGHERITA,BERTUCCELLI,BRTMGH94H47G628O,PSIC-02/A,margherita.bertuccelli@unipd.it,32
+Marco,Narici,NRCMRC56E08G479Y,BIOS-06/A,marco.narici@unipd.it,70
+Clotilde,Sparano,SPRCTL89S47A091D,MEDS-08/A,clotilde.sparano@unifi.it,37
+Romina,Fraboni,FRBRMN72D66H501P,STAT-01/A,fraboni@istat.it,54
+ Paolo , Benetti  ,BNTPLA91D06F257S,MEDS-24/A,paolo.benetti3@unibo.it,35
+ANNACHIARA ,CAVALIERE,CVLNCH92C66F839W,MEDS-14/A,annachiaracavaliere@yahoo.it,34
+Antonio,Sanguinetti,SNGNTN86M24D086F,GSPS-08/A,antonio.sanguinetti@cnr.it,40
+MATTEO,CAMMARATA,CMMMTT92C26D612T,IIND-01/G,matteo.cammarata@unifi.it,34
+Alessandra,Del Felice,DLFLSN78P64Z133P,MEDS-19/B,alessandra.delfelice@unipd.it,48
+ELEONORA ,MACCHIA,MCCLNR96P53A662L,PSIC-01/B,eleonoramacchia@cnr.it,30
+Angela ,Gambardella,GMBNGL98S61F839F,BIOS-10/A,angela.gambardella@igb.cnr.it,28
+Andrea ,Sottosanti,STTNDR92M07L319Y,STAT-01/A,andrea.sottosanti@unipd.it,34
+Maria Letizia,Tanturri,TNTMLT72H48H282E,STAT-03/A,ml.tanturri@unipd.it,54
+Giuseppe,Sergi,SRGGPP58S28H224P,MEDS-05/A,giuseppe.sergi@unipd.it,68
+Davide,Pala,PLADVD85M10L219J,GSPS-01/A,davide.pala@uniupo.it,41
+SERENA,GALLO,GLLSRN94H54I234U,ECON-09/B,serena.gallo@unina.it,32
+Antonio ,Adinolfi,DNLNTN95D05G813N,BIOS-11/A,antonio.adinolfi@igb.cnr.it,31
+Andreea Alexandra,Piriu,PRINRL91L57Z129L,STAT-03/A,andreea.piriu@unibocconi.it,35
+Paolo,Micera,MCRPLA97R03G674X,ECON-01/A,paolo.micera@unicatt.it,29
+Giovanni,Calabrese,CLBGNN88E24B563Z,GIUR-01/A,g.calabrese@unipd.it,38
+Daniele,Fiaschi,FSCDNL68C28G752W,IIND-06/B,daniele.fiaschi@unifi.it,58
+Patrizia,Ribino,RBNPRZ75E44F061D,INFO-01/A,patrizia.ribino@icar.cnr.it,51
+Domenico ,Mundo,MNDDNC75P06L049K,IIND-02/A,domenico.mundo@unical.it,51
+Jacopo,Lidonnici,LDNJCP94A10F257M,MEDS-04/A,jacopo.lidonnici@studenti.unipd.it,32
+Francesca,Forlé,FRLFNC86B44L328I,PHIL-01/A,forle.francesca@unisr.it,40
+Luca,Soraci,SRCLCU89D01F158E,MEDS-05/A,l.soraci@inrca.it,37
+Micol,Bronzini,BRNMCL79B48A271W,GSPS-08/A,m.bronzini@staff.univpm.it,47
+Giulia,Grotto,GRTGLI90A66F443C,MEDS-24/B,giulia.grotto.1@studenti.unipd.it,36
+Sara,Mondini,MNDSRA69B64D150I,PSIC-04/B,sara.mondini@unipd.it,57
+Rocco,Oliveto,LVTRCC80H08F481K,IINF-05/A,rocco.oliveto@unimol.it,46
+Carlo,Burelli,BRLCRL86H28G284D,GSPS-01/A,carlo.burelli@uniupo.it,40
+Sofia,Pavanello,PVNSFO61E53L900D,MEDS-06/A,sofia.pavanello@unipd.it,65
+ROCCO,MAZZA,MZZRCC90P07L259R,STAT-04/A,rocco.mazza@uniba.it,36
+Mariafrancesca,Scalise,SCLMFR84A50M208W,BIOS-07/A,mariafrancesca.scalise@unical.it,42
+MARIA,CONTE,CNTMRA81M61F152H,MEDS-02/A,m.conte@unibo.it,45
+Emanuele ,Menegatti,MNGMNL73R13L736P,IINF-05/A,emanuele.menegatti@unipd.it,53
+Luca,Scorrano,SCRLCU71P06G224M,BIOS-07/A,luca.scorrano@unipd.it,55
+Maria,Salobehaj,SLBMRA92D62Z100G,CHEM-03/A,maria.salobehaj@unifi.it,34
+Tatiana ,Celadin ,CLDTTN93D47F382Q,ECON-03/A,tatiana.celadin@unive.it,33
+EMMA,COLAMARINO,CLMMME89S68F915R,IBIO-01/A,emma.colamarino@uniroma1.it,37
+Patrizia ,Farina,FRNPRZ59A64F704L,STAT-03/A,patrizia.farina@unimib.it,67
+Anna,D'Ascenzio,DSCNNA76E68F839M,GIUR-07/A,anna.dascenzio@cnr.it,50
+MARIALUISA,MARZULLO,MRZMLS91C70H834J,ECON-08/A,marialuisa.marzullo@unina.it,35
+Alessio,Palatella,PLTLSS98L25A459W,IINF-05/A,alessio.palatella@phd.unipd.it,28
+VITTORIO,DIBELLO,DBLVTR77T16F376W,MEDS-16/A,vittoriodibello1@gmail.com,49
+Marco,Sandri,SNDMRC67S05G224T,MEDS-02/B,marco.sandri@unipd.it,59
+Stefano ,Calciolari,CLCSFN76L29F205I,ECON-06/A,stefano.calciolari@unimib.it,50
+Daniele,Spoladore,SPLDNL86B12I625E,INFO-01/A,daniele.spoladore@cnr.it,40
+Federico, Toth,TTHFRC74R16A944O,GSPS-02/A,federico.toth@unibo.it,52
+Antonio,Paoli,PLANTN66M02L424A,MEDF-01/A,antonio.paoli@unipd.it,60
+Nita,Handastya,HNDNTI91D51Z223P,ECON-01/A,nita.handastya@unipd.it,35
+Messina,Rossella,MSSRSL87M64C342J,MEDS-24/A,rossella.messina3@unibo.it,39
+Filippo,Cavallo,CVLFPP75H08G786B,IBIO-01/A,filippo.cavallo@unifi.it,51
+Luigi,Burroni,BRRLGU66L23D612Z,GSPS-08/A,luigi.burroni@unifi.it,60
+Edoardo Gioele,Spinelli,SPNDDG87T19F205S,MEDS-12/A,spinelli.edoardogioele@hsr.it,39
+Pietro,Tarchi,TRCPTR93H07D612I,IINF-05/A,pietro.tarchi@unifi.it,33
+SIMONE,CAUZZO,CZZSMN93A05C111N,IBIO-01/A,simone.cauzzo@unipd.it,33
+Daniele,Vignoli,VGNDNL79L18D612O,STAT-03/A,daniele.vignoli@unifi.it,47
+Sharon,Russo,RSSSRN94S62F839R,BIOS-11/A,sharon.russo@igb.cnr.it,32
+Carlo ,Ferrarese,FRRCRL55L22L781U,MEDS-12/A,carlo.ferrarese@unimib.it,71
+Maria Vittoria,Bufali,BFLMVT90D60G478W,ECON-06/A,maria.bufali@unibocconi.it,36
+Elisa,Sciurti,SCRLSE91S67Z133L,BIOS-11/A,elisa.sciurti@cnr.it,35
+Eleonora,Fiorenzato,FRNLNR88H43B563Y,PSIC-01/B,eleonora.fiorenzato@unipd.it,38
+UMUT,ELMAS,LMSMTU79H12Z243I,STEC-01/A,umutelmas79@gmail.com,47
+FABRIZIO,MEZZA,MZZFRZ92D01F839A,PSIC-04/B,fabrizio.mezza@unina.it,34
+Licia,Iacoviello,CVLLCI61P58F839P,MEDS-24/B,licia.iacoviello@neuromed.it,65
+Raffaele,Gravina,GRVRFL82E07D086B,IINF-05/A,r.gravina@dimes.unical.it,44
+Carlo ,LALLO,LLLCRL85H19G388N,STAT-03/A,carlo.lallo@unimol.it,41
+Alberto,Catalano,CTLLRT95E08H727H,MEDS-01/A,alberto.catalano@uniupo.it,31
+Klara,Komici ,KMCKLR82E45Z100T,MEDS-06/A,klara.komici@unimol.it,44
+Vincenzo,Lettera,LTTVCN82L19F839P,CHEM-01/A,vincenzo.lettera@unical.it,44
+Michele,Perrelli,PRRMHL82R14D086E,IIND-02/A,michele.perrelli@unical.it,44
+ARIANNA,SCALA,SCLRNN93L52F839Y,MEDS-24/B,arianna.scala@unina.it,33
+Manuela,Campisi,CMPMNL89C43I754Q,MEDS-25/B,manuela.campisi@unipd.it,37
+Ornella,Caputo,CPTRLL97R68I483D,BIOS-09/A,ornella.caputo@phd.unipd.it,29
+FABIOLA,MASCANZONI,MSCFBL87T62F839A,BIOS-10/A,fabiola.mascanzoni@ieos.cnr.it,39
+Matteo,Cabrini ,CBRMTT89B23C800O,BIOS-11/A,matteo.cabrini@cnr.it,37
+Laura,Formenti,FRMLRA61C56F133T,PAED-01/A,laura.formenti@unimib.it,65
+DANIELA,LEMMO,LMMDNL87R58F839S,PSIC-04/B,daniela.lemmo@unina.it,39
+Martina,Bulgari,BLGMTN96M50B157J,MEDS-26/B,martina.bulgari@unimib.it,30
+Filippo,Pallucchini,PLLFPP93A14H294C,IINF-05/A,filippo.pallucchini@unimib.it,33
+Maria Teresa,Cimmarusti,CMMMTR81P69A048W,MEDS-08/B,maria.cimmarusti@uniba.it,45
+Marianna,Delussi,DLSMNN79H47F280C,PSIC-02/A,m.delussi@gmail.com,47
+Mattia,Pistolesi,PSTMTT86T10G843B,CEAR-08/D,mattia.pistolesi@unifi.it,40
+Olivia,Realdon,RLDLVO64P41H264K,PSIC-01/A,olivia.realdon@unimib.it,62
+Anna ,De Bartolo,DBRNNA92E64D086T,BIOS-06/A,anna.de_bartolo@unical.it,34
+Patrizia,Catellani,CTLPRZ58E58F205X,PSIC-03/A,patrizia.catellani@unicatt.it,68
+Luca,Ballotto,BLLLCU98P02M089A,BIOS-09/A,luca.ballotto@studenti.unipd.it,28
+ALESSANDRA,PANTALEO,PNTLSN90L52G187C,MEDS-18/A,alessandrapantaleo18@gmail.com,36
+LARA,PERRELLA,PRRLRA94L68L259N,CHEM-08/A,lara.perrella@unina.it,32
+Beatrice Maria,Greco,GRCBRC96S66D086F,BIOS-11/A,beatricemaria.greco@irib.cnr.it,30
+Tommaso ,Angelone,NGLTMS76L09H490D,BIOS-06/A,tommaso.angelone@unical.it,50
+Maurizio,Nicolaio,NCLMRZ98R13E919H,STAT-03/B,maurizio.nicolaio@unipd.it,28
+Irene,Torrini,TRRRNI92D52H501O,ECON-03/A,irene.torrini@unibocconi.it,34
+RITA,CARUSO,CRSRTI98L47F839T,GIUR-07/A,rita.caruso@unina.it,28
+Anna,Tiso,TSINNA94M44B563L,IEGE-01/A,anna.tiso@unipd.it,32
+LORENZO,FILOSA,FLSLNZ93L29L840W,PSIC-03/B,lorenzo.filosa@uniroma1.it,33
+Enrico,Bovo,BVONRC98H08G224M,STAT-03/B,enrico.bovo@unipd.it,28
+Valentino,Meacci,MCCVNT75M03D403V,IINF-01/A,valentino.meacci@unifi.it,51
+Laura,Ferrero,FRRLRA82T61B111W,SDEA-01/A,laura.ferrero@uniupo.it,44
+Fabrizio,Culotta,CLTFRZ85L09I199Z,STAT-03/A,fabrizio.culotta@unimib.it,41
+Stefano ,Corso,CRSSFN92B21H620Y,GIUR-01/A,stefano.corso.1@unipd.it,34
+Giulia,Sebastianutto,SBSGLI97P49L483E,PSIC-01/B,giulia.sebastianutto@unipd.it,29
+Lucrezia Alice,Moschetta,MSCLRZ96R65L736D,GSPS-06/A,lucreziaalice.moschetta@studenti.unipd.it,30
+Eugenia,Mercuri,MRCGNE90B46L219S,GSPS-05/A,eugenia.mercuri@uniupo.it,36
+Francesca,ROTOLO ,RTLFNC91D55H096H,GIUR-01/A,francesca.rotolo@unive.it,35
+Marcello,DEOTTO,DTTMCL89D12L781P,GIUR-04/A,marcello.deotto@unive.it,37
+Alessandra,Grossi,GRSLSN93S47F704M,INFO-01/A,alessandra.grossi@unimib.it,33
+Valeria,Malacarne,MLCVLR87S50E379D,BIOS-07/A,valeria.malacarne@uniupo.it,39
+Elia,Angelino ,NGLLEI89C07B041K,BIOS-07/A,elia.angelino@uniupo.it,37
+Giulia,Rossino,RSSGLI94L70B019N,BIOS-08/A,giulia.rossino@unupo.it,32
+LIVIO,D'ALVIA,DLVLVI89T12H501V,IMIS-01/B,Livio.dalvia@uniroma1.it,37
+Eleonora,Pagan,PGNLNR91T52F205Q,MEDS-24/A,eleonora.pagan@unimib.it,35
+Alina,Tratsevich,TRTLNA87T44Z139W,MEDS-01/A,alina.tratsevich@unimib.it,39
+MARTA,GIACHELLO,GCHMRT91M66I480E,ECON-03/A,marta.giachello@unibo.it,35
+Edoardo,Trombin,TRMDRD97R17D325M,INFO-01/A,edoardo.trombin@phd.unipd.it,29
+Jasmine,Molaschi,MLSJMN98R63E648R,MEDS-26/D,jasmine.molaschi2@unibo.it,28
+ZAIRA,ROMEO,RMOZRA89R71H224A,PSIC-01/B,zaira.romeo@in.cnr.it.it,37
+IRENE,CARUSO,CRSRNI91E60A662N,MEDS-13/A,irene.caruso@uniba.it,35
+MANUELA,DI CARLO,DCRMNL80C41F376S,BIOS-13/A,manuela.dicarlo@uniba.it,46
+ALFONC,BABA,BBALNC85R30Z100T,MEDS-26/C,alfonc.baba@unipd.it,41
+Chiara,Noviello,NVLCHR91A71F839D,MEDS-04/A,chiara.noviello@uniupo.it,35
+FEDERICA,ROMAGNOLI,RMGFRC93A51H501W,CEAR-08/C,federica.romagnoli@uniroma1.it,33
+Paolo,Pasetti,PSTPLA67D09D548N,GSPS-05/A,paolo.pasetti2@unibo.it,59
+Claudia,Biagi,BGICLD87M59A564C,MEDS-24/B,claudia.biagi@unifi.it,39
+Giulia,Matteucci,MTTGLI89T56D612Z,MEDS-09/A,giulia.matteucci@unifi.it,37
+CELESTE,LAURIOLA,LRLCST95A59E885Z,MEDS-13/A,celeste.lauriola@uniba.it,31
+Alessio,Faralli,FRLLSS80P25D612G,MEDS-23/A,alessio.faralli@unifi.it,46
+Daniela ,Melchiorre,MLCDNL60D51C034G,MEDS-16/A,daniela.melchiorre@unifi.it,66
+Michele,Volpi,VLPMHL74E28G478A,MEDS-24/B,michelevolpi74@outlook.com,52
+Assunta,Ingannato,NGNSNT89R44G309E,MEDS-26/A,assunta.ingannato@unifi.it,37
+Giulia,Fianco,FNCGLI83P57A269Y,BIOS-06/A,giulia.fianco@gmail.com,43
+ALESSANDRO,FERALDI,FRLLSN91M19G273B,STAT-03/A,alessandro.feraldi@uniroma1.it,35
+ERIKA,RENZI,RNZRKE96D44H501E,MEDS-24/C,erika.renzi@uniroma1.it,30
+Gessica,Sala,SLAGSC71M67I625L,MEDS-12/A,gessica.sala@unimib.it,55
+MARIA ,EPIFANIA,PFNMRA93B41F839U,GIUR-01/A,maria.epifania@unimol.it,33
+ARIANNA,COSTANTINI,CSTRNN91M67L781E,PSIC-03/B,arianna.costantini@uniroma2.it,35
+FRANCESCA,SARNO,SRNFNC79E62H501M,CEAR-09/A,francesca.sarno@uniroma1.it,47
+Simona,Incollu,NCLSMN72B47B354H,BIOS-08/A,simona.incollu@gmail.com,54
+Erica,Salvati,SLVRCE75H43H501Z,05/BIOS-08,erica.salvati@cnr.it,51
+Giovanna,Apicella,PCLGNN89S44L424C,STAT-04/A,giovanna.apicella@uniud.it,37
+Andela,Dindic,DNDNDL93D53Z153I   ,PSIC-03/A ,andela.dindic@stiima-cnr.it,33
+DANIELA,SORRIENTO,SRRDNL76C70F839Z,MEDS-26/D,daniela.sorriento@unina.it,50
+Valentina,Tocchioni,TCCVNT83E50D612M,STAT-03/B,valentina.tocchioni@unifi.it,43
+Mariano,Porcu,PRCMRN69A27E788U,STAT-03/B,mariano.porcu@unica.it,57
+Isabella,Sulis,SLSSLL77E60C858X,STAT-03/B,isabella.sulis@unica.it,49
+Marco,Pitzalis,PTZMRC63S08B354I,GSPS-06/A,marco.pitzalis63@unica.it,63
+Emanuela,Spanò,SPNMNL85H57F839T,GSPS-06/A,emanuela.spano@unica.it,41
+Barbara,Barbieri,BRBBBR71M71H118B,PSIC-03/B,barbara.barbieri@unica.it,55
+Alessio,Buonomo,BNMLSS82R22F839A,STAT-03/A ,alessio.buonomo@unina.it,44
+Marco,Bacigaluppi,BCGMRC79R21F205U,MED/26 – NEUROLOGIA,bacigaluppi.marco@hsr.it,47
+Patrizia,Spadafora,SPDPRZ67S47D086I,BIO/12 BIOCHIMICA CLINICA E BIOLOGIA MOLECOLARE CLINICA,patrizia.spadafora@cnr.it,59
+Assal,SELMA,SLMSSL94B60Z3252A,IIND-06/B,assal.selma@unifi.it,32
+Francesco ,Nicoli,NCLFNC85M27E349U,MEDS-03/A,nclfnc1@unife.it,41
+Davide,Proietto,PRTDVD96M25G348Q,MEDS-03/A,prtdvd@unife.it,30
+Andrea,Raisi,RSANDR95H12H620I,M-EDF/01,andrea.raisi@unife.it,31
+Isabella,Giorgetti,GRGSLL85M58A271C,SECS-P02; SECS-P01,isabellagiorgetti85@gmail.com,41
+Stefano,Montrasio,MNTSFN78M17F205R,STAT-03/A,Montrasios@gmail.com,48
+Nicola,Pesce,PSCNCL93L07H501Q,IMAT-01/A,nicola.pesce@uniroma1.it,33
+Giorgia,Bolognesi ,BLGGRG96L66A944C,BIOS-03/B,giorgia.bolognesi7@unibo.it,30
+Vincenzo ,Iannuzzi,NNZVCN94D21I422X,BIOS-03/B,vincenzo.iannuzzi2@unibo.it,32
+Daniela,Colucci,CLCDNL97E66A662J,BIOS-03/B,daniela.colucci2@unibo.it,29
+Salvatore,Battaglia,BTTSVT91L24G273M,Statistica sociale SECS 05 ,Salvatore.battaglia02@unipa.it,35
+Claudia,Marzi,MRZCLD65S51Z112F,GLOT-01/A,claudia.marzi@cnr.it,61
+Marino,Pezzolo,PZZMRN95H01F205U,GSPS-08/A,marino.pezzolo@unina.it,31
+Silvia Concetta,Colucci,CLCSVC59R43B180Y,BIOS-13/A,silviaconcetta.colucci@uniba.it,67
+Graziana,Colaianni,CLNGZN75S66A662D,BIOS-13/A,graziana.colaianni@uniba.it,51
+Angela,Oranger,RNGNGL80A59A662R,BIOS-13/A,angela.oranger@uniba.it,46
+Angelo,Torrente,TRRNGL92L07G273R,MEDS-12/A,angelo.torrente@unipa.it,34
+Fabrizio,Guajana,GJNFRZ92P15G273R,MEDS-12/A,fabguaj@gmail.com,34
+Andrea,Priulla,PRLNDR94T24G273G,STAT-01/A,andrea.priulla@unikore.it,32
+Francesco,Giuliani,GLNFNC73L28H926H,PHYS-06/A,f.giuliani@operapadrepio.it,53
+Grazia,D'Onofrio,DNFGRZ79C58D643A,PSIC-04/B,g.donofrio@operapadrepio.it,47
+Giuseppina,Iannacone,NNCGPP92T53H985E,PSIC-01/A,g.iannacone@operapadrepio.it,34
+Michela,Falcone,FLCMHL94P42H985Z,INF-04/A,m.falcone@operapadrepio.it,32
+Massimiliano,Malvicini,MLVMSM92S04G674A,GIUR-05/A,massimiliano.malvicini@uniupo.it,34
+Isabella Maria Zoppi,,ZPPSLL65P44I138K,COMP -01/A,isabellamaria.zoppi@cnr.it,61
+Annamaria,Cerantonio,CRNNMR90B41C710G,BIOS-08/A,annamaria.cerantonio@irib.cnr.it,36
+Fabio ,Busonero,BSNFBA76A18B354F,BIOS-14/A,fabio.busonero@cnr.it,50
+Sileshi Nibret,Zeleke,ZLKSSH94B12Z315U,INFO-01/A,sileshi.zeleke@uniba.it,32
+Francesca,Crobu,CRBFNC79A68G113L,BIO/18 Genetica,francesca.crobu@irgb.cnr.it,47
+Jessica,Gambardella,GMBJSC90D47F839R,MEDS-26/D,gambardellajessica@gmail.com,36
+Stefano ,Tortora,TRTSFN92R06D548S,ING-INF/05,stefano.tortora@unipd.it,34
+Erica,Busca,BSCRCE89C46D938R,MEDS-24/C,erica.busca@uniupo.it,37
+Isabella,Santomauro,SNTSLL96A61L219O,MEDS-24/C,isabella.santomauro@uniupo.it,30
+Erika,Bassi,BSSRKE75M41B110W,MEDS-24/C,erika.bassi@uniupo.it,51
+Gianluca,Vadalà,VDLGLC79C14I874J,MEDS-19/A ,g.vadala@policlinicocampus.it ,47
+Rocco,Papalia,PPLRCC77L06E041U,MEDS-19/A ,R.Papalia@policlinicocampus.it ,49
+Cirino,Amato,MTACRN76D21C351D,MEDS-19/A ,R.Amato@policlinicocampus.it,50
+Stefano,Campi,CMPSFN83S14H501Y,MEDS-19/A ,S.Campi@policlinicocampus.it ,43
+Giuseppina,Di Giacomo,DGCGPP78A44H501X,MEDS-19/A ,g.digiacomo@unicampus.it ,48
+Veronica,Tilotta,TLTVNC90A60E041Q,MEDS-19/A ,v.tilotta@policlinicocampus.it,36
+Fabrizio,Russo,RSSFRZ88H25H224C,MEDS-19/A ,fabrizio.russo@policlinicocampus.it ,38
+Luca,Ambrosio,MBRLCU93T27F839M,MEDS-19/A ,l.ambrosio@policlinicocampus.it ,33
+Giuseppe Francesco,Papalia,PPLGPP92A30H224T,MEDS-19/A ,g.papalia@policlinicocampus.it ,34
+Roberta ,Bernardini,BRNRRT82L49E958Y,MEDS-02/A,roberta.bernardini@uniroma2.it,44
+Stefano  ,Marini,MRNSFN58D03D773M,BIOS/07A,stefano.marini@uniroma2.it,68
+Felicia,Carotenuto,CRTFLC63M58L219P,MEDS-26/A,carotenuto@med.uniroma2.it,63
+Mario,Mezzanzanica,MZZMRA59H27F205L,IINF-05/A,mario.mezzanzanica@unimib.it,67
+ELENA,GROSSINI,GRSLNE70L68F952F,05/BIOS-06,elena.grossini@med.uniupo.it,56
+Agnese,Iannaccone,NNCGNS02B52I805F,MATH-03/B,agnese.iannaccone@studio.unibo.it,124
+giulia,ganugi,GNGGLI90C48F257M,GSPS-06/A,giulia.ganugi2@unibo.it,36
+Sara,Ristori,RSTSRA92D51A851V,MEDS 02/A,sara.ristori@unifi.it,34
+Sileshi Nibret ,Zeleke,ZLKSSH94B12Z315U,IINF-05/A,sileshi.zeleke@uniba.it,32
+Federico,Benassi,BNSFRC77T12E625O,STAT-03/A,federico.benassi@unina.it,49
+Ludovica,Zambello,ZMBLVC97S54C111L,BIOS-08/A ,Ludovica.zambello@studenti.unipd.it,29
+Alessandra,Aloisi,LSALSN73C52B180A,"PHYS-03/A;
+PHYS-06/A; CHEM-01/A ",alessandra.aloisi@cnr.it,53
+olena ,ignatenko,GNTLNO99E47Z138M,GSPS-05/A - Sociologia generale.,olena.ignatenko@studenti.unicz.it,27
+Elena,Adelucci,DLCLNE99P46I726W,IBIO-01/A,elena.adelucci@unifi.it,27
+Niccolò,Alunni,LNNNCL99B17D612I,IBIO-01/A,niccolo.alunni@unifi.it,27
+Martina,Falagiani,FLGMTN99C60F656E,IBIO-01/A, martina.falagiani@unifi.it,27
+AMIN TUNI,GURE,GRUMTN90B02Z315D,IINF-05/A,amin.tuni@uniba.it,36
+Revathi,Palat Rao,PLTRTH92L62Z222L,STAT-03/A,revathi.palatrao@unifi.it,34
+Lucia,Coppola,CPPLCU75R63H501S,STAT-03/B,lcoppola@istat.it,51
+Isabella ,Siciliani,SCLSLL68H59G942X,STAT-02/A,sicilian@istat.it,58
+Paolo,Mattesini,MTTPLA91B09A390A,IINF-01/A,paolo.mattesini@unifi.it,35
+Lucia,Scisciola,SCSLCU89D65I483S," 06/MEDS-02 06/A2 - PATOLOGIA
+GENERALE E PATOLOGIA
+CLINICA",lucia.scisciola@unicampania.it,37
+Manuela Giovanna ,Basilicata,BSLMLG91C59A509B,03/CHEM-07-A - CHIMICA FARMACEUTICA,manuelagiovanna.basilicata@unicampania.it,35
+Maria Cristina,Ferrara,FRRMCR92M41I577G,MEDS-05/A,mcris.ferrara@gmail.com,34
+Giuseppina,Basta,BSTGPP61D60B771H,BIOS-08/A,lapina@ifc.cnr.it,65
+Diletta,Ami,MAIDTT73L43F205B,PHYS-06/A,diletta.ami@unimib.it,53
+Alessandra,Cuomo,CMULSN91P66F839H,MED/09,alebcuomo@gmail.com,35
+Daniela,Carrillo,CRRDNL74D60D423Q,13/STAT-03 ,daniela.carrillo@unimib.it,52
+Lorenzo,Spadetto,SPDLNZ97S07L407C,GSPS-02/A,lorenzo.spadetto2@unibo.it,29
+Francesca,Ingravallo,NGRFNC75A48A662D,MEDS-25/A,francesca.ingravallo@unibo.it,51
+massimo ,attanasio,ttnmsm59b12f205k,STAT/03b,massimo.attanasio@unipa.it,67
+marco,enea,neemrc76h27g273j,meds/24-a,marco.enea@unipa.it,50
+GIOVANNI,BOSCAINO,BSCGNN76P23G273S,STAT/03b,giovanni.boscaino@unipa.it,50
+ornella,giambalvo,gmbrll67d68g273i,STAT/03b,ornella.giambalvo@unipa.it,59
+vito,muggeo,mggvmc72m30a669h,STAT/02,vito.muggeo@unipa.it,54
+Paola,Pontrelli,PNTPLA74D69A662A,BIOS10/A,paola.pontrelli@uniba.it,52
+Michele,Marzulli,MRZMHL70R23F205Z,GSPS-05/A,michele.marzulli@unive.it,56
+LUCIA,SIMMINI,SMMLCU88D54C978T,"SECS-S/04 – DEMOGRAFIA, SECS-S/05 – STATISTICA SOCIALE",lucia.simmini@gmail.com,38
+YLENIA,BRILLI,BRLYLN83E42F656M,13/ECON-01 ,ylenia.brilli@unive.it,43
+Rebecca,Graziosi,GRZRCC95A68A271N,Gerontologia,r.graziosi@inrca.it,31
+Giuseppe,Gargiulo,GRGGPP88E28F839U,GSPS-08/A,giuseppe.gargiulo2@unina.it,38
+Nikolaisalvatore,Pagano,PGNNLS98T13Z154Y,GSPS-05/A – Sociologia generale,pagano.nikolai98@gmail.com,28
+Ombretta,Guardiola,GRDMRT77B61F839A,BIOS-10/A,ombretta.guardiola@igb.cnr.it,49
+DANIELE ,DEMARCO,DMRDNL78S03F839X,M-FIL/03,daniele.demarco@ismed.cnr.it,48
+Simonetta,Capone,CPNSNT70H47E506C, PHYS-03/A ; CHEM-01/A ,simonetta.capone@cnr.it,56
+Erika,Dicorato,DCRRKE99R62L328Y,STAT-03/A,erika.dicorato@unifi.it,27
+Alessandra,Coin,CNOSLN71C56G224A,MEDS-05/A ,alessandra.coin@unipd.it,55
+EMANUELA,RESTA,RSTMNL92L69H096N,MED/01,emanuela.resta@uniroma1.it,34
+Sara,Santini,SNTSRA75A52A 271G,14/GSPS-05,s.santini2@inrca.it,51
+Marta,Balietti ,BLTMRT74H49E388J,BIOS-06/A,m.balietti@inrca.it,52
+Paolo,Balietti ,BLTPLA86R16D542O,MEDS-05/A,p.balietti@inrca.it,40
+Alessia,Beccace,BCCLSS89S47H211S,"BIOS-11/A 
+",a.beccacece@inrca.it ,37
+Serena ,Cancellieri,CNCSRN86E42I480B,GIUR-01/A,s.cancellieri@inrca.it,40
+Maurizio ,Cardelli ,CRDMRZ69H24L103O,BIOS-08/A ,m.cardelli@inrca.it,57
+Barbara ,Carrieri,CRRBBR88T44A271K,MEDS-05/A,b.carrieri@inrca.it ,38
+Georgia,Casanova,CSNGRG74A69D969H,GSPS-05/A,g.casanova@inrca.it ,52
+Tiziana,Casoli,CSLTZN62R70F205I,BIOS-08/A,t.casoli@inrca.it ,64
+Giuseppina,Dell'Aquila,DLLGPP77S56C726I,MEDS-05/A,g.dellaquila@inrca.it,49
+Mirko,Di Rosa,DRSMRK80A05E388H,STAT-01/B,m.dirosa@inrca.it,46
+Massimiliano,Fedecostante,FDCMSM84E05A271K,MEDS-05/A,m.fedecostante@inrca.it,42
+Matteo,Finco,FNCMTT85D14L736H,GSPS-05/A,m.finco@inrca.it,41
+Chiara,Giordani,GRDCHR94D65H211J,MEDS-02/B,c.giordani@inrca.it,32
+Giada Ida,Greco,GRCGDD88D70D086S,MEDS-05/A,g.greco@inrca.it,38
+Davide,Lucantoni,LCNDVD92E28I348D,GSPS-05/A ,d.lucantoni@inrca.it,34
+Marco,Malavolta,MLVMRC71H26A271V,MEDS-02/A,m.malavolta@inrca.it,55
+Francesca,Marchegiani,MRCFNC71B42E388C,MEDS-02/B,f.marchegiani@inrca.it ,55
+Giulia,Matacchione,MTCGLI90L63A271G,MEDS-02/B,g.matacchione@inrca.it,36
+Ersilia,Paparazzo,PPRRSL94S64C352H,BIOS-14/A,ersilia.paparazzo@unical.it,32
+Francesco,Piacenza,PCNFNC80H19C615L,BIOS-08/A ,f.piacenza@inrca.it,46
+Rina,Recchioni,RCCRNI61E60A271A,MEDS-02/B,r.recchioni@inrca.it,65
+Fabio,Salvi,SLVFBA72P07B474Z,MEDS-05/A,f.salvi@inrca.it,54
+Marco,Socci,SCCMRC75D14G157E,GSPS-05/A,m.socci@inrca.it,51
+Vera,Stara,STRVRE77C47B354O,PSIC-01/A,v.stara@inrca.it,49
+Mara,Volpentesta,VLPMRA93L48H579N,MEDS-5/A,m.volpentesta@inrca.it,33
+Serena,Marcozzi,MRCSRN91E42H769O,MEDS-02/A,s.marcozzi@inrca.it,35
+Maria Elisa,Giuliani,GLNMLS83C50I608Z,MEDS-02/A,m.giuliani@inrca.it,43
+Laura,Filice,FLCLRA88A50D086F,MEDS-5/A,l.filice@inrca.it,38
+Rosanna,Maniscalco,MNSRNN90R65H269Y,BIOS-09/A,R.MANISCALCO@inrca.it,36
+Raffaella,Moresi,MRSRFL69L70A271G,BIOS-09/A,R.Moresi@inrca.it,57
+Luigi ,Pranno,PRNLGU57D20D086N,MEDS-19/B,L.PRANNO@inrca.it,69
+Leonardo,Biscetti,BSCLRD90D12M082B,MEDS-12/A,L.BISCETTI@inrca.it,36
+Matilde,Sbriscia,SBRMLD97D65I608G,BIOS-10/A,M.SBRISCIA@inrca.it,29
+Carlo,Zottola,ZTTCRL61S25D086R,MEDS-19/B,C.ZOTTOLA@inrca.it,65
+Alessandro,Gialluisi,GLLLSN84M26C134I,MEDS-24/A ,gialluisi@lum.it,42
+Antonietta,Pepe,PPENNT81E57E335B,MEDS-24/A ,pepe@lum.it,45
+Simona,Esposito,SPSSMN91E64F839A,MEDS-24/A ,simona.esposito@moli-sani.org,35
+Anna,Picca,PCCNNA80H52A662L,BIOS-10/A,picca@lum.it,46
+Bianca,Rocca,RCCBNC64S55D643M,BIOS-11/A,rocca@lum.it,62
+Maria Cristina,D'adamo,DDMMCR71S57E372H,BIOS-06/A,dadamo@lum.it,55
+Gianfranco,Tassielli,TSSGNN79M17E882Z,PHYS-06/A,tassielli@lum.it,47
+Floriana ,Porcaro,PRCFRN98P49C525I,MEDS-09/A ,FLORIANA.PORCARO@GMAIL.COM,28
+Mario,Pilosi,PLSMRA81R25Z112Q,BIOS-9/A,MARIO.PILOSI@ALICE.IT; ,45
+Amelia,Filippelli,FLPMLA57E61E249I,BIOS-11/A ,afilippelli@unisa.it,69
+Valeria,Conti,CNTVLR75H66H703J,BIOS-11/A ,vconti@unisa.it,51
+Federica,Papaccio,PPCFRC88E46F104D,BIOS-13/A,fpapaccio@unisa.it,38
+Elena,Ciaglia,CGLLNE82R56D390P,MEDS-02/B,eciaglia@unisa.it,44
+Raffaella,Belvedere,BLVRFL88A41F912W,BIOS-11/A ,rbelvedere@unisa.it,38
+Jessica,Dal Col,DLCJSC77L52M089W,MEDS-02/B,jdalcol@unisa.it,49
+Luigi ,Losco,LSCLGU87M27F839C,MEDS-14/A,llosco@unisa.it,39
+Francesco,Sabbatino,SBBFNC79R04F839B,MEDS-09/A,fsabbatino@unisa.it ,47
+Alessandro,Caputo,CPTLSN94A23H703G,MEDS-04/A,alcaputo@unisa.it ,32
+Celestino ,Sardu,SRDCST80S05F839F,MEDS-05/A,CELESTINO.SARDU@unicampania.it,46
+Manuela Giovanna,Basilicata,BSLMLG91C59A509B,CHEM-07/A,manuelagiovanna.basilicata@unicampania.it,35
+Lucia ,Scisciola,SCSLCU89D65I483S,MEDS-26/A,LUCIA.SCISCIOLA@unicampania.it,37
+Katherine ,Esposito,SPSKHR71L56F839R,MEDS-08/A,katherine.esposito@unina2.it,55
+Ada ,Pesapane,PSPDAA81D49F839Y,MEDS-26/A,ada.pesapane@unicampania.it,45
+Giuseppe ,Bellastella,BLLGPP79L16F839D,MEDS-08/A,giuseppe.bellastella@unicampania.it,47
+Maria Ida,Maiorino,MRNMRD80R61F912N,MEDS-08/A,mariaida.maiorino@unicampania.it,46
+Giovanni Francesco,Nicoletti,NCLGNN64A20H919I,MEDS-05/A,Mauro.GIORDANO@unicampania.it,62
+Lucio Publio,Gallo,GLLLPB98S18A509K,MEDS-02/A,luciopublio.gallo2@unibo.it,28
+Ludovica,Rossotti,RSSLVC82D67H501C,GSPS-05/A,ludovica.rossotti@gmail.com,44
+MICHELE,BELLONI,BLLMHL72T11D629A,ECON-01/A,michele.belloni@unito.it,54
+Andrea,Maschio,MSCNDR71R27B354P,BIO/18 Genetica,andrea.maschio@cnr.it,55
+Francesca,Donati,DNTFNC94C57A944R,GSPS-08/B,francesca.donati@uniupo.it,32
+Antonella,Fiordelisi,FRDNNL90E49F839C,06/MEDS-26,antonella.fiordelisi@gmail.com,36
+Alberto,Arletti,RLTLRT96P25F257S,SECS-S/05 – STATISTICA SOCIALE,alberto.arletti@unive.it,30
+ANTONIETTA,BUONAIUTO,BNTNNT93C60F839H,MEDS-26D,anton.buonaiuto@gmail.com,33
+Giovanni,Paragliola,PRGGNN85S19F839Y,INFO-01/A,giovanni.paragliola@icar.cnr.it,41
+Marianna,Noale,NLOMNN76S56F241A,MEDS-24/A,marianna.noale@in.cnr.it,50
+Giulia,Musso,MSSGLI86L68G273P,BIOS-09/A,giulia.musso@unipd.it,40
+Serena ,Del Turco,DLTSRN74L64G702J,BIOS-09/A ,serena.delturco@cnr.it,52
+Francesca,Vianello,VNLFNC97A58M089T,PSIC-01/B,francesca.vianello.3@unipd.it,29
+Chiara,Ceolin,CLNCHR91L59L736O,MEDS-05/A,chiara.ceolin.1@unipd.it,35
+Giacomo,Sasso,SSSGCM96M13L424T,IBIO-01/A,giacomo.sasso@unifi.it,30
+Marco,Socci,SCCMRC75D14G157E,GSPS-05/A (General Sociology),m.socci@inrca.it  ,51
+Andrea,Raisi,RSANDR95H12H620I,M-EDF/01,andrea.raisi@unife.it,31
+Francesco,Nicoli,NCLFNC85M27E349U,MEDS-03/A,nclfnc1@unife.it,41
+Antonino,Natalello,NTLNNN77E24A089H,PHYS-06/A,antonino.natalello@unimib.it,49
+Adele,Magi,MGADLA98L41D403K,IBIO-01/A,adele.magi@unifi.it,28
+Giacomo,Amerio,MRAGCM00E31C632T,BIOS-06,gamerio@sissa.it,126
+Marco,Malavolta,MLVMRC71H26A271V,MEDS-02/A,m.malavolta@inrca.it,55
+Maria Elisa,Giuliani,GLNMLS83C50I608Z,,m.giuliani@inrca.it,43
+Giovanni,Lai,LAIGNN93P12A271D,,g.lai@inrca.it,33
+Giorgia,Bigossi,BGSGRG96T45A462M,,g.bigossi@inrca.it ,30
+Serena,Marcozzi,MRCSRN91E42H769O,,s.marcozzi@inrca.it ,35
+Simone,Carlo,CRLSMN80L04C523B,GSPS-06/A,simone.carlo@unicatt.it,46
+Jacopo,Patrussi,PTRJCP99R09A390F,CHEM-03/A,jacopo.patrussi@unifi.it,27
+Nicola,Pesce,PSCNCL93L07H501Q,IMAT-01/A,nicola.pesce@uniroma1.it,33
+Alessandro,Pagani,PGNLSN00L19D612M,IBIO-01/A,alessandro.pagani@unifi.it,126
+Alessandra,Stasi,STSLSN85C70L109S,MEDS-08/B,alessandra.stasi@uniba.it,41
+Alessandra,Dodich,DDCLSN86B62H199U,PSIC-01/B,alessandra.dodich@unitn.it,40
+Laura Smeldy,Jurado Medina,JRDLSM87D63Z604T,MEDS-02/A,laura.juradomedina@unibo.it,39
+Gaia,Meoni,MNEGAI91D66D612Z,CHEM-03/A,gaia.meoni@unifi.it,35
+Teresa,Villani,VLLTRS64L46D539W,CEAR/08 C - Technological and Environmental Design of Architecture,teresa.villani@uniroma1.it,62
+Alessandro,Gialluisi,GLLLSN84M26C134I,MEDS-24/A ,gialluisi@lum.it,42
+Stefano,Ghidoni,GHDSFN80A19F240A,IINF-05/A,stefano.ghidoni@unipd.it,46
+Simonetta,Capone,CPNSNT70H47E506C, PHYS-03/A ; CHEM-01/A ,simonetta.capone@cnr.it,56
+Angiola,Forleo,FRLNGL70S44E205H, PHYS-03/A ; CHEM-01/A ,angiola.forleo@cnr.it,56
+ANNALISA,COZZA,CZZNLS77M68D086A,BIOS-11/A,a.cozza@inrca.it,49
+Selene,De Benedittis ,DBNSLN90M41B619O,BIO/12 BIOCHIMICA CLINICA E BIOLOGIA MOLECOLARE CLINICA,selene.debenedittis@irib.cnr.it,36
+Alessandro,Pagani,PGNLSN00L19D612M,IBIO-01/A,alessandro.pagani@unifi.it,126
+Paola,Salvatore,SLVPLA75P68B519I,INFO-01/A,paola.salvatore@unimib.it,51
+Luca,Tonin,TNNLCU82R30L736G,IINF-05/A ,luca.tonin@unipd.it,44
+Luca,Vota,VTOLCU95S20A717W,ECON-02/A,luca.vota@ismed.cnr.it,31
+Nicola,Rocco,RCCNCL81D11F839Q,MED-18,nicolarocco2003@gmail.com,45
+Rosella,Rettaroli,RTTRLL58E55E388D,STAT-03/A,rosella.rettaroli@unibo.it,68
+Mariapia Giuditta,Cratere,CRTMPG92D64L738W,MEDS-01/A,cratere.mariapiagiud@hsr.it,34
+Melissa,Danna,DNNMSS96T70A089F,MEDS-01/A,danna.melissa@hsr.it,30
+Marcella,Piacentino,PCNMCL97R48F839E,IINF-04/A,marcella.piacentino@unina.it,29
+FRANCESCO,SCHETTER,SCHFNC98R25F839C,IINF-04/A,francesco.schetter@unina.it,28
+Adolfo,Santoro,SNTDLF81L04A717P,ING-INF 05,adolfosantoro@youbiquo.eu,45
+Marianna,Russo,RSSMNN80H62H703F,GIUR-04/A ,mariannarusso@cnr.it,46
+Claudia,Di Napoli,DNPCLD65M64F839D,INFO-01/A,claudia.dinapoli@icar.cnr.it,61
+Angela,Berardi,BRRNGL95L53G596T,BIOS-06/A ,angela.berardi2@unibo.it,31
+Maria Laura ,Ferrando,FRRMLR72P50B354R,MEDS-03/A,marialaura.ferrando@cnr.it,54
+FERNANDO,GIANFRANCESCO,GNFFNN68E11G596Z,05/BIOS-10,fernando.gianfrancesco@igb.cnr.it,58
+THAIS,GARCIA-PEREIRO,GRCTHS82E61Z614V,STAT-03/B ,t.garcia.pereiro@uniba.it,44
+Marco,Trerotola,TRRMRC78C16A509L,MEDS-26/A,marco.trerotola@unich.it,48
+Maurizio,Ronci,RNCMRZ73T27G482W,BIOS-07/A,maurizio.ronci@unich.it,53
+Patrizia,Di Iorio,DRIPRZ56E70C632W,BIOS-11/A,patrizia.diiorio@unich.it,70
+Concetta,Saponaro,SPNCCT78B41F152N,BIOS-12/A,c.saponaro@oncologico.bari.it,48
+Simona,De Summa,DSMSMN82L67F152Z,BIOS-08/A,s.desumma@oncologico.bari.it,44
+Antonio ,Tufaro,TFRNTN60P25A263O,BIOS-09/A,a.tufaro@oncologico.bari.it,66
+Giuseppe Manuel,De Palma,DPLGPP82B22F915O,MEDS-08/B,g.depalma@oncologico.bari.it,44
+Daniele,Vergara,VRGDNL78P27E506Z,BIOS-06/A,daniele.vergara@unisalento.it,48
+Anna Maria,Giudetti,GDTNMR67S42A326R,BIOS-07/A,anna.giudetti@unisalento.it,59
+Francesco Paolo,Fanizzi,FNZFNC56S07C975L,CHEM-03/A,francesco.fanizzi@unisalento.it,70
+Biagio,Iacolare,CLRBGI97M15F839A,STAT-03/A,biagio.iacolare@unina.it,29
+Marta,Massei,MSSMRT93A69G843T,PSIC-01/B,marta.massei@unifi.it,33
+Venturina,Stagnu,STGVTR77P46H501I,BIOS-14/A,venturina.stagni@cnr.it,49
+Anna Maria,Carluccio,CRLNMR94C58G751A,09/IINF-05,annamariacarluccio@cnr.it,32

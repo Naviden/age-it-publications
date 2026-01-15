@@ -1,0 +1,378 @@
+Nome,Cognome,Codice fiscale,Inquadramento contrattuale,MC
+Daniela,Trisciuoglio,TRSDNL73R55H501N,Ricercatore ,True
+Tiziana,Tesauro,TSRTZN71H58F205V,Ricercatore (III livello),True
+Pietro ,Siciliano,SCLPRL60D26I549H,"Dirigente di Ricerca, I Livello",True
+Serena ,Sanna,SNNSRN80S55H856X,Dirigente di Ricerca,True
+Paolo ,Matteini,MTTPLA77B04D612X,"Dirigente di Ricerca, I Livello",True
+Gabriella,Cortellessa,CRTGRL71T69A515R,Primo Ricercatore,True
+Francesca ,Cavalcanti,CVLFNC61T56D086E,I° Ricercatore TI,True
+Paolo ,Barsocchi,BRSPLA78S27G702C,Primo ricercatore,True
+Antonino,Colanzi,CLNNNN64B29E435X,"II Livello, fascia 3",True
+Maria Grazia,Andreassi,NDRMGR66P66C349Y,Dirigente di Ricerca IV FASCIA,True
+Alessandro ,Leone,LNELSN74P07L682M,Primo Ricercatore (II livello),True
+Lorenzo Clemente,Spinelli,SPNLNZ70B04F205W,"PRIMO RICERCATORE FINO AL 31/12/2022, DAL 01/01/2023 E' DIVENTATO DIRIGENTE DI RICERCA",True
+Antonio ,Coronato,CRNNTN72B13G793S,I ricercatore,True
+Alessandro ,Sale,SLALSN77L19F979I,Dirigente di ricerca,True
+Marco ,Sacco,SCCMRC68C01F205O,Dirigente di Ricerca,True
+Vito ,Pirrelli,PRRVTI61S01A662V,I livello - Dirigente di Ricerca,True
+Mario ,Paolucci,PLCMRA68E17H501F,Direttore IRPPS,True
+Gabriella ,Minchiotti,MNCGRL65A66F839V,Dirigente di Ricerca I Livello,True
+Mattia,Vitiello,VTLMTT66C18L259K,Primo Ricercatore (II livello),True
+Stefania ,Maggi,MGGSFN58D54F471Q,I livello - Dirigente di Ricerca,True
+Luca ,Francioso,FRNLNN76E30Z133J,1° RICERCATORE - II livello,True
+Greta ,Falavigna,FLVGRT79T50B885Y,1° RICERCATORE - II livello,True
+Luisa ,Errichiello,RRCLSU81H54F839Q,Primo ricercatore,True
+Veronica,De Rosa,DRSVNC79S54F839X,dal 1/01/2023 è Primo ricercatore,True
+Fabrizio,D'Adda di Fagagna,DDDFRZ66L28L483G,dirigente di ricerca,True
+Sandro ,Locati,LCTSDR76E28A145C,Quadro,True
+Alessandro ,Sala,SLALSN90E30E507Y,Quadro,True
+Diego ,Ganora,GNRDGI79C02B885J,Quadro,True
+Valentina,Ricci ,RCCVNT70M48H501X,PROF. STATISTICO I LIV.,True
+Giuseppe Pio,Dachille,DCHGPP85D24H926H,FUNZIONARIO C1,True
+Monica Pia Cecilia,Paiella,PLLMCP69L62F205I,DIRIG. ART. 19 CO.6 INC. DIRIG.,True
+Diego ,Pieroni,PRNDGI67P03C773B,PROF. STATISTICO I LIV.,True
+GIACOMO,FRATI,FRTGCM74H26G478H,CO.CO.CO.,True
+DANIELA,CARNEVALE,CRNDNL81H44C034L,CO.CO.CO.,True
+ANGELA,SANTONI,SNTNGL50B61F870Z,CO.CO.CO.,True
+MARIA BENEDETTA,DONATI,DNTMBN44D56M082V,CO.CO.CO.,True
+Andrea,Corsonello,CRSNDR68D19D086U,Responsabile UOC Geriatria/Centro di Ricerca per l'invecchiamento Cosenza in convenzione,True
+Antonio  ,Cherubini,CHRNTN66L09I921H,"Direttore Dipartimento Strutturale Percorsi Geriatrici della Fragilità, della Continuità delle Cure e Riabilitativi",True
+Cristina,Gagliardi,GGLCST65E54A271J,Dirigente Sociologo PTA,True
+Giovanni,Lamura,LMRGNN63E02A271D,Responsabile UOC Centro Strudi e Ricerche Economico Sociali per l'invecchiamento,True
+Fabrizia,Lattanzio ,LTTFRZ66D69G878Z,Direttore Scientifico,True
+Maria Gabriellla,Melchiorre,MLCMGB60L66A271K,Collaboratore Amministrativo Categ. D,True
+Marcello,Melone,MLNMCL70A08D488X,Digente Medico in convenzione,True
+Fabiola,Olivieri,LVRFBL68R52D007H,Dirigente Biologo in convenzione,True
+Andrea,Principi,PRNNDR66M26A271P,Dirigente Sociologo PTA,True
+Antonio Domenico,Procopio,PRCNND56D08I872P,Dirigente Struttura UOC Clinica di Medicina di Laboratorio di Precisione in convenzione,True
+Mauro,Provinciali ,PRVMRA58T06A271I,Responsabile UOC Centro Tecnologie Avanzate nell'invecchiamento,True
+Lorena,Rossi,RSSLRN63H67C770Z,Responsabile UOSD Innovazione e Ricerca Trasferimento Tecnologico,True
+Sara,Santini,SNTSRA75A52A271G,Dirigente Sociologo PTA,True
+Cinzia,Conti,CNTCNZ72H43H501Q,Primo ricercatore,True
+Cinzia,Castagnaro,CSTCNZ74P41H501C,Primo ricercatore,True
+Gianni,Corsetti,CRSGNN77T18L719Z,Ricercatore,True
+Luisa,Frova,FRVLSU66H69Z404J,Dirigente di ricerca,True
+Sabrina,Prati,PRTSRN65C66H501J,DIRETTORE CENTRALE,True
+Mariangela,Verrascina,VRRMNG73H53G786M,Primo ricercatore,True
+Fioravante,Mari,MRAFVN69S13A717N,Quadro,True
+STEFANO,VIRGILLO,VRGSFN67M02A390S,CCNL METALMECCANICI - Quadro S,True
+EMANUELE,COSTANTINI,CSTMNL70B23G478R,CCNL METALMECCANICI - Impiegato,True
+ERIKA,BRESSANI,BRSRKE75C42E648A,CCNL METALMECCANICI - Quadro S,True
+Rabih,Chattat,CHTRBH58E25Z229S,PO,True
+Luigi,Bubacco,BBCLGU63R13L736C,PO,True
+Angelo,Antonini,NTNNGL61M02D653L,PO,True
+Giovanna,Boccuzzo,BCCGNN67M66G224Z,PO,True
+Carlo,Viscomi,VSCCLF74C27L400G,PA,True
+Guglielmo,Weber,WBRGLL58P14D612G,PO,True
+Maria,Argenti,RGNMRA58M56H501D,PO,True
+Silvano,Sozzani,SZZSVN59T10L219V,PO,True
+Giuseppe,Pugliese,PGLGPP54S29H501F,PO,True
+Christian,Napoli,NPLCRS85M14C351D,PA,True
+Fabio ,Lucidi,LCDFBA65T01Z221G,PO,True
+Alessandro ,Laviano,LVNLSN63D02H501B,PA,True
+Stefano,Gianni,GNNSFN76A27H501Z,PO,True
+Daniele,Gianfrilli,GNFDNL79E28H501V,PA,True
+Gian Maria ,Fimia,FMIGMR67R17H501X,PO,True
+Tiziana,Ferrante,FRRTZN65R52D643E,PO,True
+Zaccaria,Del Prete,DLPZCR63L05H501T,PO,True
+Alessandra,De Rose,DRSLSN63P43G478P,PO,True
+Febo,Cincotti,CNCFBE70S04H501M,PO,True
+Anna Maria Borghi,Borghi,BRGNMR64T52F257Z,PO,True
+Matteo,Bologna,BLGMTT79C21H501U,RTD,True
+Stefania,Basili,BSLSFN61A57H501V,PO,True
+Elisabetta,Barbi,BRBLBT67E45H501L,PO,True
+Roberto ,Baiocco,BCCRRT73E11H501X,PO,True
+Cristiana,Abbafati,BBFCST70E54I992A,RU,True
+Guido ,Alessandri,LSSGDU79H21A345G,PO,True
+Alessio,Tamburrano,TMBLSS78B17H501A,PO,True
+Paolo,Villari,VLLPLA61D08F839E,PO,True
+Agar,Brugiavini,BRGGRA58H61I653V,PO,True
+Giacomo,Pasini,PSNGCM76H04G224F,PO,True
+Mario,Padula,PDLMRA71B21F839U,PO,True
+Francesco,Moscone,MSCFNC74A13G482W,PA,True
+Sabrina,Marchetti,MRCSRN77B53H501F,PA,True
+Irene,Mammi,MMMRNI83R67I496F,PA,True
+Valeria,Maggian,MGGVLR85L71L840V,PA,True
+Claudia,Irti ,RTICLD73L69H501W,PO,True
+Vera,Djordjilovic,DJRVRE86S62Z118U,PA,True
+Barbara,Da Roit,DRTBBR72R64F704Z,PO,True
+Luca,Corazzini ,CRZLCU76C30F257P,PO,True
+Danilo,Cavapozzi,CVPDNL79R30F382W,PA,True
+Stefano,Campostrini,CMPSFN62T26L736C,PO,True
+Margherita,Borella,BRLMGH69A66G224T,PO,True
+Ylenia,Brilli ,BRLYLN83E42F656M,RTD,True
+Sara,Viotti ,VTTSRA82C62L219O,PA,True
+Francesca,Zantomio,ZNTFNC78T61G224O,PO,True
+LORENZO,CAPPELLARI ,CPPLNZ69P16F205P,PO,True
+ALESSANDRO,ROSINA ,RSNLSN68L04D442J,PO,True
+GIUSEPPE,RIVA ,RVIGPP67C29F205P,PO,True
+FRANCESCO,PAGNINI ,PGNFNC83P16D416V,PO,True
+MASSIMO,MONTALTO ,MNTMSM68M12E472X,PA,True
+EMANUELE,MARZETTI ,MRZMNL73E30F499W,PA,True
+CAMILLO,MARRA ,MRRCLL62E26H501T,PO,True
+CLAUDIA,MANZI ,MNZCLD75M50H501Z,PO,True
+MARIA LUISA,MANCUSI ,MNCMLS69B62F205Y,PO,True
+GABRIELE,SANI ,SNAGRL76M18H501C,PO,True
+CLAUDIO,LUCIFORA ,LCFCLD60B21H501N,PO,True
+FRANCESCO,LANDI ,LNDFNC64A20H501Q,PO,True
+ELISA,GREMESE ,GRMLSE73B52L483M,PA,True
+GUENDALINA,GRAFFIGNA ,GRFGDL79E70I138M,PO,True
+ANTONIO,GASBARRINI ,GSBNTN63R11A944E,PO,True
+ELENA,COTTINI ,CTTLNE78E51F205F,PA,True
+GIANLUCA,CASTELNUOVO ,CSTGLC75R30E507N,PO,True
+PIERMARCO,AROLDI ,RLDPMR61L29F205M,PO,True
+DONATELLA,BRAMANTI ,BRMDTL56E44L682N,PO,True
+ROSA,LIPEROTI ,LPRRSO73H68D122M,PA,True
+DANIELA,VILLANI ,VLLDNL78M65A794A,PA,True
+Giustina,Orientale Caputo,RNTGTN63C71F839Q,Professore Associato,True
+Pasquale ,Arpaia,RPAPQL61B02F839V,Professore Ordinario,True
+Lorenzo,Mercurio,MRCLNZ73C23F839W,Professore Ordinario,True
+Rosa,Casillo,CSLRSO67T62C495U,Professore Associato,True
+Rosa,Cocozza,CCZRSO68A69F839Q,Professore Ordinario,True
+Emilia,Di Lorenzo,DLRMLE61B54F839U,Professore Ordinario,True
+Erminia,Attaianese,TTNRMN64H51L259C,Professore Associato,True
+Maddalena,Illario,LLRMDL67A62H703O,Professore Associato,True
+Fabrizio,Schonauer,SCHFRZ67R04F839A,Professore Associato,True
+Gilda ,Cennamo,CNNGLD74R50F839E,RTD,True
+Carlo,Ruosi,RSUCRL60C30F839F,Professore Ordinario,True
+Rosario,Pivonello,PVNRSR70A09F839V,Professore Ordinario,True
+Gabriella,Fabbrocini,FBBGRL64T56F839K,Professore Ordinario,True
+Enrica,Menditto,MNDNRC77A64B715D,Professore Associato,True
+Guido,Iaccarino,CCRGDU67C05F839G,Professore Ordinario,True
+Fanny,Ficuciello,FCCFNY74R60F912H,Professore Associato,True
+Giusepppe ,Rengo,RNGGPP78S30F839T,Professore Ordinario,True
+Pasquale ,Abete,BTAPQL57P24F839E,Professore Ordinario,True
+Nicola,Ferrara,FRRNCL53B02A509S,Professore Ordinario,True
+Salvatore ,Strozza,STRSVT63M22D708M,Professore Ordinario,True
+Giuseppe,Gabrielli,GBRGPP74P25F915X,Professore Associato,True
+Tiziana,Russo Spena,RSSTZN74H67F839U,Professore Ordinario,True
+Cristina,Mele,MLECST71S46F839M,Professore Ordinario,True
+Flavia ,Valtorta,VLTFLV57D52F205V,PO,True
+Marco Emilio,Bianchi,BNCMCM57S18F205S,PO,True
+Luca,Rampoldi,RMPLCU69P17H264B,PA,True
+Patrizia,Rovere Querini,RVRPRZ69C51F205M,PA,True
+Andrea,Giustina,GSTNDR62A24F205G,PO,True
+Federica,Agosta,GSTFRC78D41F205R,PA,True
+Carlo,Pappone,PPPCRL61T05A783N,PO ,True
+Roberta,Sala,SLARRT64L44C139A,PO,True
+Francesca Maria,De Vecchi,DVCFNC69R68F205K,PO,True
+Sarah,Songhorian,SNGSRH87A47F205O,RTD,True
+Roberto,Mordacci,MRDRRT65E30F205M,PO,True
+Massimo,Reichlin,RCHMSM65H26H501H,PO,True
+Carlo ,Martini,MRTCRL83P22G224U,PA,True
+Francesca ,Pongiglione,PNGFNC80P59D969B,PA,True
+MARIA,CARELLA,CRLMRA69E62A662M,RU,True
+NICOLA,QUARANTA,QRNNLN72E30A662B,PO,True
+ALBERTO,PILOTTO,PLTLRT57H04I531G,PO,True
+GRAZIANO,PESOLE ,PSLGZN59A02A662R,PO,True
+ANNA,PATERNO,PTRNNA64D68A662K,PO,True
+ROBERTA,PACE,PCARRT71A58A662P,PA,True
+GIANCARLO ,LOGROSCINO ,LGRGCR55H28A662Y,PO,True
+MARIA,GRANO,GRNMRA61R56A053Z,PO,True
+FRANCESCO,GIORGINO,GRGFNC64D09A662R,PO,True
+LORETO,GESUALDO,GSLLRT60T27A225N,PO,True
+ANTONIO ,FRIGERI,FRGNTN61M03A662W,PO,True
+VALERIA,DI COMITE,DCMVLR71D45D643K,Professore Ordinario,True
+ANNAMARIA,DE LUCA,DLCNMR62A41F158S,PO,True
+CARMINE,CLEMENTE,CLMCMN68E12L858D,PA,True
+CLAUDIA MORGANA,CASCIONE,CSCCDM78H67A662K,PA,True
+LETIZIA,CARRERA,CRRLTZ69P50A662J,PA,True
+MARIO ALESSANDRO,BOCHICCHIO,BCHMLS64B04G942N,PA,True
+ELVIRA ,BRATTICO,BRTLVR71R43A662C,PO,True
+VINCENZO,SOLFRIZZI,SLFVCN61B24A662Y,PO,True
+ELISABETTA,VENEZIA,VNZLBT68D52E038N,RU,True
+Nicola,Baldini,BLDNCL56M12D612K,PO,True
+Cristina,Ugolini,GLNCST69H58A944W,PA,True
+Alessandro,Silvani,SLVLSN75M06H199F,PA,True
+Stefano ,Salvioli,SLVSFN66D16B819H,PA,True
+Riccardo,Prandini,PRNRCR67H14F257E,PO,True
+Veronica,Moretti,MRTVNC88T41A390Y,RTD DM 856/2020,True
+Danilo,Montesi,MNTDNL64A22E388O,PO,True
+Rossella ,Miglio,MGLRSL65H56H501P,PA,True
+Jacopo,Lenzi,LNZJCP85T31A944O,PA,True
+Loris,Vergolini,VRGLRS79L18L378R,RTD,True
+Francesca,Ingravallo,NGRFNC75A48A662D,PA,True
+Cristina,Giuliani,GLNCST86C58C573G,PA,True
+Gianluca,Fiorentini,FRNGLC62L09D458K,PO,True
+Marco,Domenicali,DMNMRC71L23A944W,PA,True
+Luke Brian,Connelly,CNNLBR71P12Z700G,PO,True
+Chiara Ludovica,Comolli,CMLCRL84T50C816S,RTD DM 856/2020,True
+Miriam,Capri,CPRMRM64R63D166U,PA,True
+Marco,Alberio,LBRMRC79S06F205H,PA,True
+Marco,Albertini,LBRMRC75M25L781W,PO,True
+Roberto,Impicciatore,MPCRRT72T05L113R,PA,True
+Sara,Zaniboni,ZNBSRA78E57E289A,PA,True
+Francesco,Billari,BLLFNC70R13F205U,PO,True
+Massimo ,Anelli,NLLMSM85D19L736O,Associato,True
+Jerome Frans,Adda,DDAJMF68D03Z110D,PO,True
+Giulia,Cappellaro,CPPGLI83S60L736Y,Associato,True
+Amelia,Compagni,CMPMLA71P44E507A,PA,True
+Catherine Eunice,De Vries,NTJCHR78R71Z126W,PO,True
+Maurizio,Del Conte,DLCMZF65D23F205S,PO,True
+Giovanni,Fattore,FTTGNN63S16D612Z,PO,True
+Vincenzo,Galasso,GLSVCN67D04F839H,PO,True
+Simone,Ghislandi,GHSSMN75P26L388O,PA,True
+Giulia,Giupponi,GPPGLI88E51D325N,RIC,True
+Joseph Simon,Goerlach,GRLJPH83H18Z112P,RIC,True
+Francesco,Longo,LNGFNC67D14Z112Z,PA,True
+Paola,Profeta,PRFPNT72E42F205R,PO,True
+Aleksandra,Torbica,TRBLSN75R42Z118V,PA,True
+Scott Randall,Williamson,WLLSTT90H30Z404R,Ricercatore,True
+Guglielmo,Bonaccorsi,BNCGLL65S17A561E,PA,True
+Francesca,Tosi,TSOFNC61R44D612B,PO,True
+Leonardo,Tenori,TNRLRD77E24G999C,PA,True
+Nicoletta,Setola,STLNLT77C41D705H,PA,True
+Chiara,Rapallini,RPLCHR70E43G702Y,PA,True
+Alessandro Ovidio Paris,Ramalli,RMLLSN83R21G999T,RTD,True
+Elena,Pirani,PRNLNE77T59C469V,PA,True
+Benedetta,Nacmias,NCMBDT60S58D612M,PA,True
+Daniela,Monti,MNTDNL58E59F097L,PA,True
+Mario,Maggi,MGGMRA56D12D612L,PO,True
+Marco,Linari,LNRMRC63T30D612D,PO,True
+Sara,Landini,LNDSRA72D59D612W,PO,True
+Antonio,Lanatà,LNTNTN74P16C352A,PA,True
+Serena,Guiducci,GDCSRN74A60G713S,PA,True
+Giuseppe,Legname,LGNGPP62M31D960T,PO ,True
+Laura,Ballerini,BLLLRA61C64D612Q,PO ,True
+Raffaella ,Rumiati,RMTRFL61D54I953X,PO ,True
+Davide Franco,Zoccolan,ZCCDDF72S03L219R,PO ,True
+Erika,Borella,BRLRKE73T59G535J,PO,True
+Chiara ,Verbano,VRBCHR70T51F443U,PA,True
+Maria Letizia,Tanturri,TNTMLT72H48H282E,PA,True
+Giuseppe,Sergi,SRGGPP58S28H224P,PO,True
+Luca,Scorrano,SCRLCU71P06G224M,PO,True
+Marco,Sandri,SNDMRC67S05G224T,PO,True
+Sofia,Pavanello,PVNSFO61E53L900D,PA,True
+Antonio,Paoli,PLANTN66M02L424A,PO,True
+Marco,Narici,NRCMRC56E08G479Y,PO,True
+Sara,Mondini,MNDSRA69B64D150I,PO,True
+Emanuele ,Menegatti,MNGMNL73R13L736P,PO,True
+Arianna,Fusaro,FSRRNN71L67G224A,PO,True
+Alessandra,Del Felice,DLFLSN78P64Z133P,PA,True
+Anita,De Rossi,DRSNTA52T63L407M,PO,True
+Martina,Celidoni,CLDMTN84C45G224Z,PA,True
+Luca,Busetto,BSTLCU61S01L736M,PA,True
+Alessandra,Buja,BJULSN72L56G224W,PA,True
+Raffaele,Guetto,GTTRFL83M06D969N,PA,True
+Nicoletta,Galeotti,GLTNLT65P63G843S,PA,True
+Daniele,Fiaschi,FSCDNL68C28G752W,PA,True
+Gustavo,De Santis,DSNGTV60M31L219E,PO,True
+Andrea,Corvi,CRVNDR56A03D612Q,PO,True
+Fabrizio,Chiti,CHTFRZ71L07D612X,PO,True
+Francesca,Cecchi,CCCFNC66D46D612G,PA,True
+Filippo,Cavallo,CVLFPP75H08G786B,PA,True
+Federico,Carpi,CRPFRC75B10G702O,PA,True
+Luigi,Burroni,BRRLGU66L23D612Z,PO,True
+Micol,Bronzini,BRNMCL79B48A271W,PA,True
+Enrico,Boni,BNONRC77D09D612T,PA,True
+Bruno,Arpino,RPNBRN80L02L845K,PA,True
+Vanna,Boffo,BFFVNN59S50E202W,PO,True
+Andrea,Ungar,NGRNDR67S22D612G,PO,True
+Daniele,Vignoli,VGNDNL79L18D612O,PO,True
+Roberto,Dell'Omo,DLLRRT76E14B519O,PA,True
+Sergio,Davinelli,DVNSRG81H01B519X,PA,True
+Giuseppe,Calcagno,CLCGPP68S11F839Z,PO ,True
+Alfonso,Di Costanzo,DCSLNS57L29L245U,PA,True
+Stefania,Giova,GVISFN72H49F839A,PO,True
+Daniela,Grignoli,GRGDNL67D66B519L,PA,True
+Klara,Komici ,KMCKLR82E45Z100T,PA,True
+Ennio,Lubrano di Scorpaniello,LBRNNE65M12F839M,PO,True
+Rocco,Oliveto,LVTRCC80H08F481K,PO ,True
+Giuliano,Resce,RSCGLN85C31A783O,PA,True
+Stefano,Ricciardi,RCCSFN64R19F839A,Professore Associato,True
+Gianluca,Testa,TSTGLC74C16F839S,PA,True
+Cecilia,Tomassini,TMSCCL68E62H501P,PO,True
+Enrico,Biale,BLINRC81P29A984H,RTD,True
+Elena,Allegri,LLGLNE58P56D150O,PA,True
+Gianluca,Aimaretti,MRTGLC66P11G674T,PO,True
+Daniela,Capello,CPLDNL70S54L219J,PA,True
+Paola,Costelli,CSTPLA63D62L219A,PA,True
+Alberto,Dal Molin,DLMLRT77D26A859L,PA,True
+Fabrizio,Faggiano,FGGFRZ57E01L219J,PO,True
+Anna,Galeotti,GLTNLS53C69A794C,PO,True
+Andrea,Graziani,GRZNDR58C11E625X,PO,True
+Poalo,Marzullo,MRZPLA66H28F839C,PA,True
+Cristina,Meini,MNECST66D51A859V,PO,True
+Tiziana,Nazio,NZATZN71H51L219X,PA,True
+Massimiliano,Panella,PNLMSM69R02L750X,PO,True
+Andrea,Pogliano,PGLNDR77S01L219U,PA,True
+Fulvio ,Ricceri,RCCFLV80S26L219B,PA,True
+Paolo ,Berta,BRTPLA74L23B157D,PA,True
+Laura ,Terzera,TRZLRA64E49F205T,PO,True
+Emanuela Maria,Sala,SLAMLM70L66F704V,PO,True
+Daniele  Luigi,Romano,RMNDLL84L06F205T,RTD,True
+Matteo ,Pelagatti,PLGMTM72B28D198I,PO,True
+Mario,Mezzanzanica,MZZMRA59H27F205L,PO,True
+Fabio ,Mercorio,MRCFBA83S06I838N,PA,True
+Fabrizia,Mantovani,MNTFRZ75L52F205M,PO,True
+Maria Pia ,Longhese,LNGMRP67D49A940R,PO,True
+Francesca,Gasparini,GSPFNC71R61F205O,PA,True
+Matteo ,Franchi,FRNMTT86T07F205S,RTD,True
+Laura,Formenti,FRMLRA61C56F133T,PO,True
+Carlo ,Ferrarese,FRRCRL55L22L781U,PO,True
+Patrizia ,Farina,FRNPRZ59A64F704L,PO,True
+Roberta ,Daini,DNARRT69P67A794U,PA,True
+Stefano ,Calciolari,CLCSFN76L29F205I,PA,True
+Stefania,Bandini,BNDSFN56M45H720P,PO,True
+Giuseppe ,Bellelli,BLLGPP63A29B157A,PO,True
+Angelo ,Vescovi,VSCNLL62D24H509H,PA,True
+Antonella ,Zambon,ZMBNNL67P50E120N,PO,True
+Fiorenzo ,Conti,CNTFNZ55M13Z110X,Direttore Struttura  UOC Centro Neurobiologico dell'Invecchiamento in convenzione,True
+Claudia,Salvatore,SLVCLD68S68F839U,Professore Ordinario,True
+Egidio,De Benedetto,DBNGDE79R12G348R,Professore Associato,True
+Massimiliano,Scalvenzi,SCLMSM55H22L483B,Professore Associato,True
+Valerio,Rotondo,RTNVLR87T10F839X,RTD,True
+Licia,Iacoviello,CVLLCI61P58F839P,CO.CO.CO.,True
+Patrizia,Ribino,RBNPRZ75E44F061D,Ricercatore (III livello),True
+Marco,Montemurro,MNTMRC84E14A662F,Ricercatore (III livello),True
+Domenico ,De Giovanni,DGVDNC79M01D122Y,PA,True
+Romina,Fraboni,FRBRMN72D66H501P,Primo ricercatore,True
+Eleonora,Meli,MLELNR77M62C351X,Ricercatore,True
+Dario,Leosco,LSCDRA58C18F839C,Professore Ordinario,True
+Anna,Marenzi,MRNNNA60L54M109Y,Professore Ordinario,True
+Giuliano,Zavattari,ZVTGLN80A17L682C,Quadro,True
+Giovanni,De Fazio,DFZGNN58D12C424A,Professore Ordinario,True
+Federica,Martinelli,MRTFRC95S56A662S,Funzionario Business con 5 anni di anzianità (classe 2^,True
+Chiara,Barbuio,BRBCHR92R66L483K,Funzionario Business con 5 anni di anzianità (classe 2^,True
+Gabriella,Piscopo,PSCGRL83H56F839C,Professore Associato,True
+Rosa Anna,Laboccetta,LBCRNN86R45H224D,Impiegato,True
+Francesca Maria Mercedes,Arecco,RCCFNC73L70G197C,Dirigente,True
+Simone,Cenci,CNCSMN71S16G478D,PA,True
+Silvia,Giunco,GNCSLV73S56D325X,RTDb,True
+Antonio ,Logrieco,LGRNNF58A21A662C,direttore di Istituto ,True
+Maria Francesca,Freda,FRDMFR65T69F839G,Professore Ordinario,True
+Patrizia,Catellani,CTLPRZ58E58F205X,Professore Ordinario,True
+Diego,Ciccone,CCCDGI81R19F924V,Impiegato,True
+Giovanni Renato,Riccardi ,RCCGNN76P24F051Y,Responsabile UOC Medicina Riabilitativa,True
+Raffaele,Gravina,GRVRFL82E07D086B,PA,True
+Domenico ,Mundo,MNDDNC75P06L049K,PO,True
+Patrizia ,Ordine,RDNPRZ62L45H501H,PO,True
+Mariafrancesca,Scalise,SCLMFR84A50M208W,PA,True
+Letizia,Mencarini,MNCLTZ69T45C608V,PO,True
+Rossella,Maione,MNARSL59L54B860J,Professore Associato,True
+Giammarco,Alderotti,LDRGMR90M29G999T,RTDb,True
+Anna Maria Carmela Natale Vittoria ,Napoli,NPLNMR65T63H962R,PO,True
+Alberto,Vezzoso,VZZLRT73L05D969C,Quadro,True
+Nicolò,Cavalli,CVLNCL87M12H294J,Ricercatore,True
+Stefano,Alivernini,LVRSFN80P19H282Q,Ricercatore,True
+Federico, Toth,TTHFRC74R16A944O,PROFESSORE ORDINARIO,True
+Luisa, Corazza,CRZLSU70L44A944A,PROFESSORE ORDINARIO,True
+Cristina, Airoldi,RLDCST79B53A794C,Professore Associato,True
+Samuele, Iaquinto,QNTSML88M16D969K,Ricercatore RTDb,True
+Francesco, Lancia,LNCFNC79M02G878T,Professore associato,True
+Tommaso ,Angelone,NGLTMS76L09H490D,PA,True
+Giuseppe ,Carbone,CRBGPP72R23H703J,PA,True
+Sandra ,Costanzo ,CSTSDR72A46D086P,PO,True
+Giuseppe ,Rose,RSOGPP78R16D086H,PA,True
+Manuela ,Stranges,STRMNL76A70D086L,PA,True
+Luigi ,Bruno,BRNLGU74R25D086Y,PA,True
+Emilio ,Russo,RSSMLE79H20D086B,PA,True
+Massimiliano,Menzietti,MNZMSM70M17H769M,PA,True
+Rosamaria ,Lappano,LPPRMR82T62D086R,PA,True
+Giacinto ,Bagetta,BGTGNT59T20D257E,PO,True
+Massimo ,Costabile,CSTMSM70S27D086S,PO,True
+Giuseppe ,Passarino,PSSGPP64A07D086R,PO,True
+Massimo,Armenise,RMNMSM78H23A662X,Ricercatore di III livello,True
+Elvira,Filicetti,FLCLVR86R63D086K,Dirigente Medico,True
+Luca,Soraci,SRCLCU89D01F158E,Dirigente Medico,True
+Gianfranco,Santoro,SNTGFR70S13H501C,Direttore,True

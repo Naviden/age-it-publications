@@ -11,6 +11,36 @@ LOGO_PATH = Path(__file__).parent / "logo.jpg"
 st.markdown(
     """
     <style>
+      /* Force Streamlit button containers to take full width */
+        div[data-testid="stVerticalBlock"] > div:has(> div.stButton) {
+          width: 100% !important;
+        }
+
+        div.stButton {
+          width: 100% !important;
+        }
+
+        div.stButton > button {
+          width: 100% !important;
+          height: 52px !important;
+          font-size: 1rem !important;
+          font-weight: 700 !important;
+          background: #FFD401 !important;
+          color: #111 !important;
+          border: 1px solid #E6C200 !important;
+          border-radius: 10px !important;
+          padding: 0 14px !important;
+        }
+
+        div.stButton > button:hover {
+          background: #FFDD2E !important;
+          border-color: #E6C200 !important;
+        }
+
+        div.stButton > button:focus {
+          outline: none !important;
+          box-shadow: 0 0 0 3px rgba(255, 212, 1, 0.35) !important;
+        }
       .block-container {
         padding-top: 1.4rem !important;
         max-width: 1200px;

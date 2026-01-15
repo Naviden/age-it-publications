@@ -86,7 +86,7 @@ label_font_size = st.sidebar.slider(
     "Dimensione etichette",
     min_value=9,
     max_value=18,
-    value=11,
+    value=15,
     step=1,
     help="Modifica la dimensione del testo delle etichette esterne.",
 )

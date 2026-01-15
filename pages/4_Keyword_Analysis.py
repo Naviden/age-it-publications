@@ -97,13 +97,13 @@ max_phrase_words = st.sidebar.slider(
 palette = st.sidebar.selectbox(
     "Palette colori",
     ["set3", "tableau10", "paired"],
-    index=0,
+    index=1,
 )
 
 rotate_mode = st.sidebar.selectbox(
     "Rotazione",
     ["Solo orizzontale", "0° / 90°"],
-    index=0,
+    index=1,
     help="Se 0°/90°, una parte delle keyword viene ruotata di 90°.",
 )
 
@@ -144,7 +144,7 @@ tokens = (
 )
 if exclude_set:
     tokens = tokens[~tokens.isin(exclude_set)]
-    
+
 tokens = tokens[tokens != ""]
 tokens = tokens[~tokens.str.fullmatch(r"[\W_]+", na=False)]
 tokens = tokens[tokens.str.split().str.len() <= max_phrase_words]

@@ -115,7 +115,6 @@ total = float(sum(values)) if sum(values) > 0 else 1.0
 
 # ----------------------------
 # D3 donut / pie HTML (based on the referenced gist, adapted)
-# ----------------------------
 def donut_html(labels, values, total, show_percent, palette, inner_ratio):
     payload = {
         "labels": labels,
@@ -139,6 +138,15 @@ def donut_html(labels, values, total, show_percent, palette, inner_ratio):
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     background: #fff;
   }}
+  #chart {{
+    width: 100%;
+    overflow: visible; /* important */
+  }}
+  svg {{
+    width: 100%;
+    height: auto;
+    overflow: visible; /* important */
+  }}
   .tooltip {{
     position: absolute;
     padding: 6px 10px;
@@ -155,9 +163,9 @@ def donut_html(labels, values, total, show_percent, palette, inner_ratio):
     fill: none;
     opacity: 0.9;
   }}
-  text {{
+  text.label {{
     fill: #222;
-    font-size: 12px;
+    font-size: 11px;
   }}
 </style>
 </head>
@@ -173,15 +181,18 @@ const showPercent = payload.show_percent;
 const palette = payload.palette;
 const innerRatio = payload.inner_ratio;
 
-const width = 860, height = 520, margin = 30;
+// Larger canvas so labels fit
+const width = 1100, height = 560;
+const margin = 30;
 const radius = Math.min(width, height) / 2 - margin;
 
 const svg = d3.select("#chart")
   .append("svg")
-  .attr("width", width)
-  .attr("height", height)
-  .append("g")
-  .attr("transform", `translate(${{width/2}},${{height/2}})`);
+  .attr("viewBox", [0, 0, width, height])  // responsive
+  .attr("preserveAspectRatio", "xMidYMid meet");
+
+const g = svg.append("g")
+  .attr("transform", `translate(${width/2},${height/2})`);
 
 // palettes
 const palettes = {{
@@ -206,21 +217,21 @@ const dataReady = pie(labels.map((d, i) => ({{ name: d, value: values[i] }})));
 
 const arc = d3.arc()
   .innerRadius(radius * innerRatio)
-  .outerRadius(radius * 0.9);
+  .outerRadius(radius * 0.88);
 
 const outerArc = d3.arc()
   .innerRadius(radius * 1.02)
   .outerRadius(radius * 1.02);
 
 // slices
-const slices = svg.selectAll('path.slice')
+const slices = g.selectAll('path.slice')
   .data(dataReady)
   .join('path')
   .attr('class', 'slice')
   .attr('d', arc)
   .attr('fill', d => color(d.data.name))
   .attr('stroke', d => d3.color(color(d.data.name)).darker(0.6))
-  .attr('fill-opacity', 0.8);
+  .attr('fill-opacity', 0.85);
 
 // tooltip
 const tooltip = d3.select("body").append("div")
@@ -235,17 +246,19 @@ slices
   .on("mousemove", (event, d) => {{
     const name = d.data.name;
     const value = d.data.value;
-    const extra = showPercent ? `<br/>Percentuale: ${{pct(value)}}` : "";
+    const extra = showPercent ? `<br/>Percentuale: ${pct(value)}` : "";
     tooltip
       .style("opacity", 1)
-      .html(`<b>${{name}}</b><br/>Valore: ${{value}}${{extra}}`)
+      .html(`<b>${name}</b><br/>Valore: ${value}${extra}`)
       .style("left", (event.pageX + 12) + "px")
       .style("top", (event.pageY + 12) + "px");
   }})
   .on("mouseout", () => tooltip.style("opacity", 0));
 
-// polylines
-svg.selectAll('polyline.label-line')
+// polylines (push labels farther out)
+const labelOffset = radius * 1.35;
+
+g.selectAll('polyline.label-line')
   .data(dataReady)
   .join('polyline')
   .attr('class','label-line')
@@ -253,29 +266,66 @@ svg.selectAll('polyline.label-line')
     const posA = arc.centroid(d);
     const posB = outerArc.centroid(d);
     const posC = outerArc.centroid(d);
-    posC[0] = radius * 1.20 * (d.endAngle < Math.PI ? 1 : -1);
+    posC[0] = labelOffset * (d.endAngle < Math.PI ? 1 : -1);
     return [posA, posB, posC];
   }});
 
 // labels
-svg.selectAll('text.label')
+const labelSel = g.selectAll('text.label')
   .data(dataReady)
   .join('text')
   .attr('class','label')
-  .text(d => d.data.name)
   .attr('transform', d => {{
     const pos = outerArc.centroid(d);
-    pos[0] = radius * 1.23 * (d.endAngle < Math.PI ? 1 : -1);
-    return `translate(${{pos}})`;
+    pos[0] = (labelOffset + 8) * (d.endAngle < Math.PI ? 1 : -1);
+    return `translate(${pos})`;
   }})
-  .style('text-anchor', d => d.endAngle < Math.PI ? 'start' : 'end');
+  .style('text-anchor', d => d.endAngle < Math.PI ? 'start' : 'end')
+  .text(d => d.data.name);
 
+// OPTIONAL: wrap long labels into multiple lines (recommended)
+wrapLabels(labelSel, 240);
+
+function wrapLabels(textSelection, width) {{
+  textSelection.each(function() {{
+    const text = d3.select(this);
+    const words = text.text().split(/\\s+/).reverse();
+    let word;
+    let line = [];
+    let lineNumber = 0;
+    const lineHeight = 1.05; // em
+    const y = text.attr("y") || 0;
+    const dy = 0;
+
+    const anchor = text.style("text-anchor");
+    const x = 0;
+
+    let tspan = text.text(null)
+      .append("tspan")
+      .attr("x", x)
+      .attr("y", y)
+      .attr("dy", dy + "em");
+
+    while ((word = words.pop())) {{
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {{
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan")
+          .attr("x", x)
+          .attr("y", y)
+          .attr("dy", (++lineNumber * lineHeight + dy) + "em")
+          .text(word);
+      }}
+    }}
+  }});
+}}
 </script>
 </body>
 </html>
 """
-
-
 # ----------------------------
 # Render chart
 # ----------------------------

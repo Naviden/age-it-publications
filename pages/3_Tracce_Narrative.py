@@ -19,7 +19,7 @@ st.set_page_config(page_title="Tracce Narrative", layout="wide")
 BASE_DIR = Path(__file__).resolve().parent
 REPO_DIR = BASE_DIR.parent
 
-DATA_PATH = REPO_DIR / "data" / "processed" / "tracce_narrative.csv"
+DATA_PATH = REPO_DIR / "data" / "processed" / "donut_data.csv"
 LOGO_PATH = REPO_DIR / "logo.jpg"
 
 

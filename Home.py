@@ -1,0 +1,94 @@
+# Home.py
+from pathlib import Path
+import streamlit as st
+
+st.set_page_config(page_title="Age-It: Prodotti scientifici", layout="wide")
+
+# --- Paths ---
+LOGO_PATH = Path(__file__).parent / "logo.jpg"
+
+# --- Clean layout + light cards ---
+st.markdown(
+    """
+    <style>
+      .block-container {
+        padding-top: 1.4rem !important;
+        max-width: 1200px;
+      }
+
+      .choice-box {
+        background: #ffffff;
+        border: 1px solid #e1e4e8;
+        border-radius: 12px;
+        padding: 26px 28px;
+        height: 100%;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      }
+
+      .choice-box h3 {
+        margin-top: 0;
+        color: #111;
+      }
+
+      .choice-box p {
+        color: #444;
+      }
+
+      .choice-btn button {
+        width: 100%;
+        height: 48px;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+# --- Header with logo ---
+col_logo, col_title = st.columns([1, 6], vertical_alignment="center")
+
+with col_logo:
+    if LOGO_PATH.exists():
+        st.image(str(LOGO_PATH), width=140)
+
+with col_title:
+    st.title("Analisi Age-It")
+    st.markdown(
+        "<div style='color:#777;'>Seleziona una delle analisi disponibili</div>",
+        unsafe_allow_html=True,
+    )
+
+st.write("")
+
+# --- Two main choices ---
+left, right = st.columns(2, gap="large")
+
+with left:
+    st.markdown(
+        """
+        <div class="choice-box">
+          <h3>Analisi 1</h3>
+          <p>Prima analisi (placeholder).</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    if st.button("Apri Analisi 1", key="go_a1"):
+        st.switch_page("pages/1_Analisi_A.py")
+
+with right:
+    st.markdown(
+        """
+        <div class="choice-box">
+          <h3>Collaborazioni tra ricercatori</h3>
+          <p>
+            Visualizzazione delle collaborazioni tra aree scientifiche
+            tramite diagramma chord.
+          </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    if st.button("Apri Analisi 2", key="go_a2"):
+        st.switch_page("pages/2_Collaborazioni_tra_aree_scientifiche.py")

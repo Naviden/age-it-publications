@@ -12,13 +12,14 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title="Tracce Narrative", layout="wide")
 
 # ----------------------------
-# Paths
+# Paths (repo-relative, Streamlit Cloud safe)
 # ----------------------------
 BASE_DIR = Path(__file__).resolve().parent
 REPO_DIR = BASE_DIR.parent
 
-DATA_PATH = REPO_DIR / "data" / "processed" / "donut_data.csv"
-LOGO_PATH = REPO_DIR / "logo.png"
+DATA_PATH = REPO_DIR / "data" / "processed" / "tracce_narrative.csv"
+LOGO_PATH = REPO_DIR / "logo.jpg"
+
 
 # ----------------------------
 # Load data
@@ -29,12 +30,21 @@ if not DATA_PATH.exists():
 
 df = pd.read_csv(DATA_PATH)
 
-if "category" not in df.columns or "value" not in df.columns:
-    st.error("Il CSV deve avere colonne: category, value")
+required_cols = {"orig_label", "count", "short_label"}
+missing = required_cols - set(df.columns)
+if missing:
+    st.error(f"Colonne mancanti nel CSV: {missing}")
     st.stop()
 
-labels = df["category"].astype(str).tolist()
-values = df["value"].astype(float).tolist()
+# Clean + ensure numeric
+df = df.copy()
+df["count"] = pd.to_numeric(df["count"], errors="coerce").fillna(0)
+df["orig_label"] = df["orig_label"].astype(str)
+df["short_label"] = df["short_label"].astype(str)
+
+# Keep top 8 (as per your assumption); if more exist, take the largest
+df = df.sort_values("count", ascending=False).head(8)
+
 
 # ----------------------------
 # Header
@@ -54,11 +64,67 @@ with col_title:
 
 st.write("")
 
+
 # ----------------------------
-# Donut / pie HTML (D3)
+# Sidebar controls
 # ----------------------------
-def donut_html(labels, values):
-    payload = {"labels": labels, "values": values}
+st.sidebar.header("Parametri")
+
+label_choice = st.sidebar.radio(
+    "Etichette da usare",
+    options=["Etichetta originale", "Etichetta breve"],
+    index=1,
+    help=(
+        "Scegli quale colonna usare come etichetta nel grafico. "
+        "Etichetta originale = 'orig_label'. Etichetta breve = 'short_label'."
+    ),
+)
+
+label_col = "short_label" if label_choice == "Etichetta breve" else "orig_label"
+
+show_percent = st.sidebar.checkbox(
+    "Mostra percentuali in tooltip",
+    value=True,
+    help="Se attivo, nel tooltip vengono mostrate anche le percentuali sul totale.",
+)
+
+palette = st.sidebar.selectbox(
+    "Palette colori",
+    ["set3", "tableau10", "paired"],
+    index=0,
+    help="Palette colori per le fette del diagramma.",
+)
+
+inner_radius_ratio = st.sidebar.slider(
+    "Dimensione foro (donut)",
+    min_value=0.0,
+    max_value=0.8,
+    value=0.55,
+    step=0.05,
+    help="0 = torta piena, valori maggiori = foro più grande (donut).",
+)
+
+
+# ----------------------------
+# Prepare payload for D3
+# ----------------------------
+labels = df[label_col].tolist()
+values = df["count"].astype(float).tolist()
+
+total = float(sum(values)) if sum(values) > 0 else 1.0
+
+# ----------------------------
+# D3 donut / pie HTML (based on the referenced gist, adapted)
+# ----------------------------
+def donut_html(labels, values, total, show_percent, palette, inner_ratio):
+    payload = {
+        "labels": labels,
+        "values": values,
+        "total": total,
+        "show_percent": show_percent,
+        "palette": palette,
+        "inner_ratio": inner_ratio,
+    }
     data_json = json.dumps(payload)
 
     return f"""
@@ -78,13 +144,20 @@ def donut_html(labels, values):
     padding: 6px 10px;
     background: rgba(0,0,0,0.7);
     color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 12px;
     pointer-events: none;
+    line-height: 1.25;
   }}
   .label-line {{
     stroke: #888;
     stroke-width: 1px;
+    fill: none;
+    opacity: 0.9;
+  }}
+  text {{
+    fill: #222;
+    font-size: 12px;
   }}
 </style>
 </head>
@@ -95,8 +168,12 @@ def donut_html(labels, values):
 const payload = {data_json};
 const labels = payload.labels;
 const values = payload.values;
+const total = payload.total;
+const showPercent = payload.show_percent;
+const palette = payload.palette;
+const innerRatio = payload.inner_ratio;
 
-const width = 700, height = 500, margin = 40;
+const width = 860, height = 520, margin = 30;
 const radius = Math.min(width, height) / 2 - margin;
 
 const svg = d3.select("#chart")
@@ -106,66 +183,89 @@ const svg = d3.select("#chart")
   .append("g")
   .attr("transform", `translate(${{width/2}},${{height/2}})`);
 
+// palettes
+const palettes = {{
+  set3: d3.schemeSet3,
+  tableau10: d3.schemeTableau10,
+  paired: d3.schemePaired
+}};
+const colors = palettes[palette] || d3.schemeSet3;
+
 const color = d3.scaleOrdinal()
   .domain(labels)
-  .range(d3.schemeSet3);
+  .range(colors.length >= labels.length
+    ? colors
+    : d3.range(labels.length).map(i => colors[i % colors.length])
+  );
 
 const pie = d3.pie()
   .value(d => d.value)
   .sort(null);
 
-const data_ready = pie(labels.map((d,i) => ({{ name: d, value: values[i] }})));
+const dataReady = pie(labels.map((d, i) => ({{ name: d, value: values[i] }})));
 
 const arc = d3.arc()
-  .innerRadius(radius * 0.6)
+  .innerRadius(radius * innerRatio)
   .outerRadius(radius * 0.9);
 
 const outerArc = d3.arc()
-  .innerRadius(radius * 1.0)
-  .outerRadius(radius * 1.0);
+  .innerRadius(radius * 1.02)
+  .outerRadius(radius * 1.02);
 
-svg.selectAll('slices')
-  .data(data_ready)
+// slices
+const slices = svg.selectAll('path.slice')
+  .data(dataReady)
   .join('path')
+  .attr('class', 'slice')
   .attr('d', arc)
   .attr('fill', d => color(d.data.name))
-  .style("opacity", 0.7);
+  .attr('stroke', d => d3.color(color(d.data.name)).darker(0.6))
+  .attr('fill-opacity', 0.8);
 
+// tooltip
 const tooltip = d3.select("body").append("div")
   .attr("class", "tooltip")
   .style("opacity", 0);
 
-svg.selectAll('path')
+function pct(v) {{
+  return (100 * v / total).toFixed(1) + "%";
+}}
+
+slices
   .on("mousemove", (event, d) => {{
+    const name = d.data.name;
+    const value = d.data.value;
+    const extra = showPercent ? `<br/>Percentuale: ${{pct(value)}}` : "";
     tooltip
       .style("opacity", 1)
-      .html(`<b>${{d.data.name}}</b><br/>Valore: ${{d.data.value}}`)
-      .style("left", (event.pageX + 10) + "px")
-      .style("top", (event.pageY + 10) + "px");
+      .html(`<b>${{name}}</b><br/>Valore: ${{value}}${{extra}}`)
+      .style("left", (event.pageX + 12) + "px")
+      .style("top", (event.pageY + 12) + "px");
   }})
   .on("mouseout", () => tooltip.style("opacity", 0));
 
-// add polylines between chart and labels
-svg.selectAll('allPolylines')
-  .data(data_ready)
+// polylines
+svg.selectAll('polyline.label-line')
+  .data(dataReady)
   .join('polyline')
   .attr('class','label-line')
   .attr('points', d => {{
-    const posA = arc.centroid(d); 
+    const posA = arc.centroid(d);
     const posB = outerArc.centroid(d);
     const posC = outerArc.centroid(d);
-    posC[0] = radius * 1.15 * (d.endAngle < Math.PI ? 1 : -1);
+    posC[0] = radius * 1.20 * (d.endAngle < Math.PI ? 1 : -1);
     return [posA, posB, posC];
   }});
 
-// add labels
-svg.selectAll('allLabels')
-  .data(data_ready)
+// labels
+svg.selectAll('text.label')
+  .data(dataReady)
   .join('text')
+  .attr('class','label')
   .text(d => d.data.name)
   .attr('transform', d => {{
     const pos = outerArc.centroid(d);
-    pos[0] = radius * 1.17 * (d.endAngle < Math.PI ? 1 : -1);
+    pos[0] = radius * 1.23 * (d.endAngle < Math.PI ? 1 : -1);
     return `translate(${{pos}})`;
   }})
   .style('text-anchor', d => d.endAngle < Math.PI ? 'start' : 'end');
@@ -173,17 +273,24 @@ svg.selectAll('allLabels')
 </script>
 </body>
 </html>
-    """
+"""
+
 
 # ----------------------------
 # Render chart
 # ----------------------------
-components.html(donut_html(labels, values), height=560, scrolling=False)
+components.html(
+    donut_html(labels, values, total, show_percent, palette, inner_radius_ratio),
+    height=580,
+    scrolling=False,
+)
 
 # ----------------------------
 # Description
 # ----------------------------
+label_desc = "etichette brevi" if label_col == "short_label" else "etichette originali"
 st.caption(
-    "Diagramma a torta/donut con linee di collegamento alle etichette. "
-    "Passa il mouse sopra ogni fetta per vedere i dettagli."
+    f"Il grafico mostra la distribuzione delle 8 categorie delle Tracce Narrative. "
+    f"Le etichette visualizzate sono basate su {label_desc}. "
+    "Passa il mouse su una fetta per vedere valore (e percentuale, se attivata)."
 )

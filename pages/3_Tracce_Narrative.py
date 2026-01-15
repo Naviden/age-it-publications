@@ -19,7 +19,7 @@ st.set_page_config(page_title="Tracce Narrative", layout="wide")
 BASE_DIR = Path(__file__).resolve().parent
 REPO_DIR = BASE_DIR.parent
 
-DATA_PATH = REPO_DIR / "data" / "processed" / "donut_data.csv"
+DATA_PATH = REPO_DIR / "data" / "processed" / "tracce_narrative.csv"
 LOGO_PATH = REPO_DIR / "logo.jpg"
 
 
@@ -82,10 +82,25 @@ label_choice = st.sidebar.radio(
 )
 label_col = "short_label" if label_choice == "Etichetta breve" else "orig_label"
 
-show_percent = st.sidebar.checkbox(
-    "Mostra percentuali in tooltip",
+label_font_size = st.sidebar.slider(
+    "Dimensione etichette",
+    min_value=9,
+    max_value=18,
+    value=11,
+    step=1,
+    help="Modifica la dimensione del testo delle etichette esterne.",
+)
+
+show_percent_tooltip = st.sidebar.checkbox(
+    "Mostra percentuali nel tooltip",
     value=True,
     help="Se attivo, nel tooltip vengono mostrate anche le percentuali sul totale.",
+)
+
+show_percent_on_figure = st.sidebar.checkbox(
+    "Mostra percentuali nel grafico",
+    value=False,
+    help="Se attivo, viene mostrata la percentuale su ogni fetta (se lo spazio lo consente).",
 )
 
 palette = st.sidebar.selectbox(
@@ -117,14 +132,16 @@ total = float(sum(values)) if sum(values) > 0 else 1.0
 # D3 donut / pie HTML
 # (safe for Python f-strings: no JS template literals with ${...})
 # ----------------------------
-def donut_html(labels, values, total, show_percent, palette, inner_ratio):
+def donut_html(labels, values, total, show_percent_tooltip, show_percent_on_figure, palette, inner_ratio, label_font_size):
     payload = {
         "labels": labels,
         "values": values,
         "total": total,
-        "show_percent": show_percent,
+        "show_percent_tooltip": show_percent_tooltip,
+        "show_percent_on_figure": show_percent_on_figure,
         "palette": palette,
         "inner_ratio": inner_ratio,
+        "label_font_size": label_font_size,
     }
     data_json = json.dumps(payload)
 
@@ -164,7 +181,14 @@ def donut_html(labels, values, total, show_percent, palette, inner_ratio):
 
   text.label {{
     fill: #222;
+    font-size: {label_font_size}px;
+  }}
+
+  text.pct {{
+    fill: #111;
     font-size: 11px;
+    font-weight: 600;
+    pointer-events: none;
   }}
 </style>
 </head>
@@ -176,7 +200,8 @@ const payload = {data_json};
 const labels = payload.labels;
 const values = payload.values;
 const total = payload.total;
-const showPercent = payload.show_percent;
+const showPctTooltip = payload.show_percent_tooltip;
+const showPctFigure = payload.show_percent_on_figure;
 const palette = payload.palette;
 const innerRatio = payload.inner_ratio;
 
@@ -253,7 +278,7 @@ slices
   .on("mousemove", (event, d) => {{
     const name = d.data.name;
     const value = d.data.value;
-    const extra = showPercent ? "<br/>Percentuale: " + pct(value) : "";
+    const extra = showPctTooltip ? "<br/>Percentuale: " + pct(value) : "";
     tooltip
       .style("opacity", 1)
       .html("<b>" + name + "</b><br/>Valore: " + value + extra)
@@ -261,6 +286,25 @@ slices
       .style("top", (event.pageY + 12) + "px");
   }})
   .on("mouseout", () => tooltip.style("opacity", 0));
+
+// Add % labels on slices (optional)
+// Only show if slice is not too small, to avoid clutter.
+if (showPctFigure) {{
+  g.selectAll("text.pct")
+    .data(dataReady)
+    .join("text")
+    .attr("class", "pct")
+    .attr("text-anchor", "middle")
+    .attr("transform", d => {{
+      const c = arc.centroid(d);
+      return "translate(" + c[0] + "," + c[1] + ")";
+    }})
+    .text(d => {{
+      const p = 100 * d.data.value / total;
+      // hide very small slices
+      return (p >= 4.0) ? p.toFixed(1) + "%" : "";
+    }});
+}}
 
 // polylines and labels
 const labelOffset = radius * 1.38;
@@ -295,7 +339,7 @@ wrapLabels(labelSel, 270);
 function wrapLabels(textSelection, width) {{
   textSelection.each(function() {{
     const text = d3.select(this);
-    const words = text.text().split(/\\s+/).reverse();
+    const words = text.text().split(/\s+/).reverse();
     let word;
     let line = [];
     let lineNumber = 0;
@@ -335,7 +379,16 @@ function wrapLabels(textSelection, width) {{
 # Render chart
 # ----------------------------
 components.html(
-    donut_html(labels, values, total, show_percent, palette, inner_radius_ratio),
+    donut_html(
+        labels,
+        values,
+        total,
+        show_percent_tooltip,
+        show_percent_on_figure,
+        palette,
+        inner_radius_ratio,
+        label_font_size,
+    ),
     height=720,
     scrolling=False,
 )
@@ -345,8 +398,10 @@ components.html(
 # Description
 # ----------------------------
 label_desc = "etichette brevi" if label_col == "short_label" else "etichette originali"
+extra_desc = "Nel grafico sono visibili anche le percentuali (solo per fette >= 4%)." if show_percent_on_figure else ""
 st.caption(
     f"Il grafico mostra la distribuzione delle 8 categorie delle Tracce Narrative. "
     f"Le etichette visualizzate sono basate su {label_desc}. "
-    "Passa il mouse su una fetta per vedere valore (e percentuale, se attivata)."
+    "Passa il mouse su una fetta per vedere valore (e percentuale, se attivata). "
+    + extra_desc
 )

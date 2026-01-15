@@ -117,4 +117,4 @@ with c4:
         unsafe_allow_html=True,
     )
     if st.button("Apri", key="go_keywords"):
-        st.switch_page("pages/4_Keyword_Analysis.py")
+      st.switch_page("pages/4_Keyword_Analysis.py")

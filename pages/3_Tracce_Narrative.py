@@ -140,12 +140,10 @@ def donut_html(labels, values, total, show_percent, palette, inner_ratio):
   }}
   #chart {{
     width: 100%;
-    overflow: visible; /* important */
   }}
   svg {{
     width: 100%;
     height: auto;
-    overflow: visible; /* important */
   }}
   .tooltip {{
     position: absolute;
@@ -188,11 +186,11 @@ const radius = Math.min(width, height) / 2 - margin;
 
 const svg = d3.select("#chart")
   .append("svg")
-  .attr("viewBox", [0, 0, width, height])  // responsive
+  .attr("viewBox", "0 0 " + width + " " + height)
   .attr("preserveAspectRatio", "xMidYMid meet");
 
 const g = svg.append("g")
-  .attr("transform", `translate(${width/2},${height/2})`);
+  .attr("transform", "translate(" + (width/2) + "," + (height/2) + ")");
 
 // palettes
 const palettes = {{
@@ -224,14 +222,14 @@ const outerArc = d3.arc()
   .outerRadius(radius * 1.02);
 
 // slices
-const slices = g.selectAll('path.slice')
+const slices = g.selectAll("path.slice")
   .data(dataReady)
-  .join('path')
-  .attr('class', 'slice')
-  .attr('d', arc)
-  .attr('fill', d => color(d.data.name))
-  .attr('stroke', d => d3.color(color(d.data.name)).darker(0.6))
-  .attr('fill-opacity', 0.85);
+  .join("path")
+  .attr("class", "slice")
+  .attr("d", arc)
+  .attr("fill", d => color(d.data.name))
+  .attr("stroke", d => d3.color(color(d.data.name)).darker(0.6))
+  .attr("fill-opacity", 0.85);
 
 // tooltip
 const tooltip = d3.select("body").append("div")
@@ -246,23 +244,23 @@ slices
   .on("mousemove", (event, d) => {{
     const name = d.data.name;
     const value = d.data.value;
-    const extra = showPercent ? `<br/>Percentuale: ${pct(value)}` : "";
+    const extra = showPercent ? "<br/>Percentuale: " + pct(value) : "";
     tooltip
       .style("opacity", 1)
-      .html(`<b>${name}</b><br/>Valore: ${value}${extra}`)
+      .html("<b>" + name + "</b><br/>Valore: " + value + extra)
       .style("left", (event.pageX + 12) + "px")
       .style("top", (event.pageY + 12) + "px");
   }})
   .on("mouseout", () => tooltip.style("opacity", 0));
 
-// polylines (push labels farther out)
+// polylines and labels
 const labelOffset = radius * 1.35;
 
-g.selectAll('polyline.label-line')
+g.selectAll("polyline.label-line")
   .data(dataReady)
-  .join('polyline')
-  .attr('class','label-line')
-  .attr('points', d => {{
+  .join("polyline")
+  .attr("class", "label-line")
+  .attr("points", d => {{
     const posA = arc.centroid(d);
     const posB = outerArc.centroid(d);
     const posC = outerArc.centroid(d);
@@ -270,20 +268,19 @@ g.selectAll('polyline.label-line')
     return [posA, posB, posC];
   }});
 
-// labels
-const labelSel = g.selectAll('text.label')
+const labelSel = g.selectAll("text.label")
   .data(dataReady)
-  .join('text')
-  .attr('class','label')
-  .attr('transform', d => {{
+  .join("text")
+  .attr("class", "label")
+  .attr("transform", d => {{
     const pos = outerArc.centroid(d);
     pos[0] = (labelOffset + 8) * (d.endAngle < Math.PI ? 1 : -1);
-    return `translate(${pos})`;
+    return "translate(" + pos[0] + "," + pos[1] + ")";
   }})
-  .style('text-anchor', d => d.endAngle < Math.PI ? 'start' : 'end')
+  .style("text-anchor", d => d.endAngle < Math.PI ? "start" : "end")
   .text(d => d.data.name);
 
-// OPTIONAL: wrap long labels into multiple lines (recommended)
+// Wrap long labels into multiple lines
 wrapLabels(labelSel, 240);
 
 function wrapLabels(textSelection, width) {{
@@ -294,15 +291,12 @@ function wrapLabels(textSelection, width) {{
     let line = [];
     let lineNumber = 0;
     const lineHeight = 1.05; // em
-    const y = text.attr("y") || 0;
+    const y = 0;
     const dy = 0;
-
-    const anchor = text.style("text-anchor");
-    const x = 0;
 
     let tspan = text.text(null)
       .append("tspan")
-      .attr("x", x)
+      .attr("x", 0)
       .attr("y", y)
       .attr("dy", dy + "em");
 
@@ -314,7 +308,7 @@ function wrapLabels(textSelection, width) {{
         tspan.text(line.join(" "));
         line = [word];
         tspan = text.append("tspan")
-          .attr("x", x)
+          .attr("x", 0)
           .attr("y", y)
           .attr("dy", (++lineNumber * lineHeight + dy) + "em")
           .text(word);
@@ -326,7 +320,6 @@ function wrapLabels(textSelection, width) {{
 </body>
 </html>
 """
-# ----------------------------
 # Render chart
 # ----------------------------
 components.html(

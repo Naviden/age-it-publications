@@ -108,7 +108,7 @@ with col_logo:
 with col_title:
     st.title("Age-It: Prodotti scientifici")
     st.markdown(
-        "<div style='color:#777;'>Seleziona una delle analisi disponibili</div>",
+        "<div style='color:#777;'>Analizza i prodotti scientifici di Age-It attraverso tre prospettive: temi di ricerca, reti di collaborazione e tracce narrative.</div>",
         unsafe_allow_html=True,
     )
 
@@ -148,7 +148,7 @@ with c3:
         """
         <div class="choice-box">
           <h3>Tracce Narrative</h3>
-          <p>Distribuzione di 8 categorie narrative tramite diagramma a torta/donut.</p>
+          <p>Distribuzione di 8 categorie narrative.</p>
         </div>
         """,
         unsafe_allow_html=True,

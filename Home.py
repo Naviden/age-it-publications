@@ -127,7 +127,7 @@ with c3:
         st.markdown("<div style='font-size:34px; font-weight:800; margin: 4px 0 10px 0;'>Tracce Narrative</div>", unsafe_allow_html=True)
         st.markdown(
             "<div style='color:#444; font-size:18px; line-height:1.45; margin-bottom:18px;'>"
-            "Distribuzione delle categorie narrative con grafico a torta/donut."
+            "Distribuzione delle categorie narrative."
             "</div>",
             unsafe_allow_html=True,
         )

@@ -24,7 +24,7 @@ LOGO_PATH = REPO_DIR / "logo.jpg"
 
 
 # ----------------------------
-# Load data
+# Load data (NORMAL loading)
 # ----------------------------
 if not DATA_PATH.exists():
     st.error(f"File non trovato: {DATA_PATH}")
@@ -42,14 +42,19 @@ if missing:
     )
     st.stop()
 
-df["TN"] = pd.to_numeric(df["TN"], errors="coerce").astype("Int64")
-df["count"] = pd.to_numeric(df["count"], errors="coerce").fillna(0).astype(int)
+# Basic cleaning
 df["orig_label"] = df["orig_label"].fillna("").astype(str)
 df["short_label"] = df["short_label"].fillna("").astype(str)
+df["count"] = pd.to_numeric(df["count"], errors="coerce").fillna(0).astype(int)
 
-if df["TN"].isna().all():
-    st.error("Colonna TN non valida: attesi valori 1 e 2.")
-    st.stop()
+# Normalize TN (still standard cleaning, not a custom loader)
+df["TN"] = (
+    df["TN"]
+    .astype(str)
+    .str.strip()
+    .str.replace(r"[^\d]", "", regex=True)
+)
+df["TN"] = pd.to_numeric(df["TN"], errors="coerce").astype("Int64")
 
 
 # ----------------------------
@@ -102,11 +107,10 @@ label_font_px = st.sidebar.slider(
     step=1,
 )
 
-# Wrapping controls (PowerPoint-like)
 wrap_chars = st.sidebar.slider(
     "Larghezza testo etichette (caratteri per riga)",
     min_value=12,
-    max_value=34,
+    max_value=36,
     value=20,
     step=1,
     help="Riduci per andare a capo prima (come restringere una casella di testo).",
@@ -138,12 +142,11 @@ palette = st.sidebar.selectbox(
 
 
 # ----------------------------
-# D3 Donut HTML generator
+# D3 Donut (SVG only, no title/subtitle inside the iframe)
 # ----------------------------
-def donut_html(
+def donut_svg_html(
     labels,
     values,
-    title,
     palette_name,
     inner_ratio,
     label_font,
@@ -156,7 +159,6 @@ def donut_html(
     payload = {
         "labels": labels,
         "values": values,
-        "title": title,
         "palette": palette_name,
         "inner_ratio": float(inner_ratio),
         "label_font": int(label_font),
@@ -167,7 +169,7 @@ def donut_html(
     }
     data_json = json.dumps(payload, ensure_ascii=False)
 
-    html = f"""<!doctype html>
+    return f"""<!doctype html>
 <html>
 <head>
   <meta charset="utf-8"/>
@@ -178,17 +180,8 @@ def donut_html(
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: #fff;
     }}
-    .wrap {{ width: 100%; }}
-    .title {{
-      font-size: 20px;
-      font-weight: 800;
-      margin: 6px 0 4px 0;
-      color: #111;
-    }}
-    .subtitle {{
-      font-size: 13px;
-      color: #666;
-      margin: 0 0 10px 0;
+    #chart {{
+      width: 100%;
     }}
     svg {{
       width: 100%;
@@ -215,7 +208,7 @@ def donut_html(
   </style>
 </head>
 <body>
-  <div class="wrap" id="chart"></div>
+  <div id="chart"></div>
 
   <script>
     const payload = {data_json};
@@ -233,10 +226,9 @@ def donut_html(
 
     const containerNode = document.getElementById("chart");
     const width = Math.max(520, containerNode.clientWidth || 700);  // responsive to column width
-    const height = 540;
+    const height = 620; // enough space for top/bottom labels in 2-col layout
 
-    // Smaller margins for 2-column layout, but enough for labels
-    const margin = {{ top: 10, right: 170, bottom: 10, left: 170 }};
+    const margin = {{ top: 20, right: 170, bottom: 40, left: 170 }};
     const w = width - margin.left - margin.right;
     const h = height - margin.top - margin.bottom;
 
@@ -251,17 +243,11 @@ def donut_html(
     const colors = palettes[palette] || d3.schemeSet3;
     const color = d3.scaleOrdinal().range(colors);
 
-    const container = d3.select("#chart");
-
-    container.append("div").attr("class", "title").text(payload.title);
-    container.append("div")
-      .attr("class", "subtitle")
-      .text(total > 0 ? ("Totale record: " + total) : "");
-
-    const svg = container.append("svg")
+    const svg = d3.select(containerNode).append("svg")
       .attr("viewBox", [0, 0, width, height])
       .attr("preserveAspectRatio", "xMidYMid meet");
 
+    // centred group (no title/subtitle inside iframe, so we can centre reliably)
     const g = svg.append("g")
       .attr("transform", "translate(" + (margin.left + w/2) + "," + (margin.top + h/2) + ")");
 
@@ -321,31 +307,26 @@ def donut_html(
         return [p1, p2, p3];
       }});
 
-    // --- Wrap helper (PowerPoint-like) ---
+    // Wrap helper (PowerPoint-like)
     function wrapLabel(text) {{
-      const words = (text || "").split(/\\s+/).filter(Boolean);
-      const lines = [];
-      let line = "";
+    const words = (text || "").split(/\\s+/).filter(Boolean);
+    const lines = [];
+    let line = "";
 
-      for (const w of words) {{
-        const candidate = line ? (line + " " + w) : w;
-        if (candidate.length <= maxCharsPerLine) {{
-          line = candidate;
-        }} else {{
-          if (line) lines.push(line);
-          line = w;
-        }}
+    for (const w of words) {{
+      const candidate = line ? (line + " " + w) : w;
+      if (candidate.length <= maxCharsPerLine) {{
+        line = candidate;
+      }} else {{
+        if (line) lines.push(line);
+        line = w;
       }}
-      if (line) lines.push(line);
-
-      if (lines.length > maxLines) {{
-        const trimmed = lines.slice(0, maxLines);
-        trimmed[maxLines - 1] = trimmed[maxLines - 1].replace(/\\s+$/,"");
-        if (!trimmed[maxLines - 1].endsWith("…")) trimmed[maxLines - 1] += "…";
-        return trimmed;
-      }}
-      return lines;
     }}
+    if (line) lines.push(line);
+
+    // No truncation: return all lines (PowerPoint-like wrap)
+    return lines;
+  }}
 
     // Labels as <tspan> lines (wrapped)
     const labelSel = g.selectAll("text.label-text")
@@ -376,7 +357,7 @@ def donut_html(
       const textEl = d3.select(this);
       textEl.text(null);
 
-      const lineHeightEm = 1.1;
+      const lineHeightEm = 1.2;
       const startDy = -(lines.length - 1) * 0.55; // vertically centre multi-line label
 
       lines.forEach((line, i) => {{
@@ -386,28 +367,26 @@ def donut_html(
           .text(line);
       }});
     }});
-
   </script>
 </body>
 </html>"""
-    return html
 
 
 # ----------------------------
-# Prepare data for the two charts
+# Prepare subsets (TN=1 and TN=2)
 # ----------------------------
 def prepare_subset(tn_value: int):
     sub = df[df["TN"] == tn_value].copy()
 
-    # Aggregate in case duplicates exist
+    # Keep only non-empty labels
+    sub[label_col] = sub[label_col].fillna("").astype(str)
+    sub = sub[sub[label_col].str.strip() != ""]
+
+    # Aggregate (safe)
     sub = sub.groupby(label_col, as_index=False)["count"].sum()
-
-    # Remove empty labels
-    sub = sub[sub[label_col].astype(str).str.strip() != ""]
-
     sub = sub.sort_values("count", ascending=False)
 
-    labels = sub[label_col].astype(str).tolist()
+    labels = sub[label_col].tolist()
     values = sub["count"].astype(int).tolist()
     return labels, values
 
@@ -424,17 +403,18 @@ if not labels1 and not labels2:
 
 
 # ----------------------------
-# Render charts side-by-side
+# Render charts side-by-side (titles OUTSIDE iframe)
 # ----------------------------
 left, right = st.columns(2, gap="large")
 
 with left:
+    st.subheader(TITLE_TN1)
+    st.caption(f"Totale record: {sum(values1)}")
     if labels1:
         components.html(
-            donut_html(
+            donut_svg_html(
                 labels1,
                 values1,
-                TITLE_TN1,
                 palette,
                 inner_radius_ratio,
                 label_font_px,
@@ -442,19 +422,20 @@ with left:
                 wrap_chars,
                 wrap_lines,
             ),
-            height=600,
+            height=660,
             scrolling=False,
         )
     else:
         st.info("Nessun record per TN=1.")
 
 with right:
+    st.subheader(TITLE_TN2)
+    st.caption(f"Totale record: {sum(values2)}")
     if labels2:
         components.html(
-            donut_html(
+            donut_svg_html(
                 labels2,
                 values2,
-                TITLE_TN2,
                 palette,
                 inner_radius_ratio,
                 label_font_px,
@@ -462,7 +443,7 @@ with right:
                 wrap_chars,
                 wrap_lines,
             ),
-            height=600,
+            height=660,
             scrolling=False,
         )
     else:

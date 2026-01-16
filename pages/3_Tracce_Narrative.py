@@ -69,7 +69,7 @@ with col_logo:
 with col_title:
     st.title("Tracce Narrative")
     st.markdown(
-        "<div style='color:#777;'>Distribuzione delle categorie narrative, separata per TN=1 e TN=2.</div>",
+        "<div style='color:#777;'>Distribuzione delle categorie narrative.</div>",
         unsafe_allow_html=True,
     )
 
@@ -451,7 +451,7 @@ with right:
 
 
 st.caption(
-    "I grafici mostrano la distribuzione delle categorie delle Tracce Narrative, separata per TN=1 e TN=2. "
-    "Passa il mouse su una fetta per vedere valore e percentuale. "
-    "Se necessario, aumenta il numero di righe o riduci la larghezza (caratteri per riga) per andare a capo."
+    """Per rendere più intuitiva la scoperta e l’esplorazione dei contenuti della piattaforma, è stato progettato un sistema di navigazione basato sulle Tracce Narrative.
+Questo approccio consente non solo di esplorare ciascun Percorso (Spoke) in modo autonomo, ma anche di seguire itinerari tematici che attraversano trasversalmente le diverse aree del progetto.
+Le Tracce Narrative costruiscono una vera e propria narrazione tematica, permettendo all’utente di collegare contenuti affini che, altrimenti, resterebbero frammentati all’interno delle singole sezioni. In questo modo, la navigazione diventa più coerente, guidata e orientata alla comprensione complessiva delle attività di ricerca, favorendo una visione integrata dell’impatto scientifico e sociale del progetto."""
 )

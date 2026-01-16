@@ -110,7 +110,6 @@ rotate_mode = st.sidebar.selectbox(
 DEFAULT_EXCLUSIONS = [
     "age-it",
     "ageit",
-    "aging",
     "dataset",
     "systematic review",
     "literature review"

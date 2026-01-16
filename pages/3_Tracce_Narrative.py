@@ -30,62 +30,7 @@ if not DATA_PATH.exists():
     st.error(f"File non trovato: {DATA_PATH}")
     st.stop()
 
-def load_tracce_csv(path: Path) -> pd.DataFrame:
-    """
-    Robust CSV loader for tracce_narrative.csv.
-
-    Expected logical columns:
-      orig_label, count, short_label, TN
-
-    Repairs malformed rows where orig_label contains commas and the row is not quoted.
-    Strategy: split by comma and rebuild using the last 3 fields as (count, short_label, TN),
-    and join the rest back into orig_label.
-    """
-    # First try normal parsing
-    try:
-        df0 = pd.read_csv(path)
-        if {"orig_label", "count", "short_label", "TN"}.issubset(df0.columns):
-            # If TN looks sane (only 1/2 or blank), accept
-            tn_vals = pd.to_numeric(df0["TN"], errors="coerce").dropna().astype(int)
-            if tn_vals.empty or set(tn_vals.unique()).issubset({1, 2}):
-                return df0
-    except Exception:
-        pass
-
-    # Fallback: manual repair
-    rows = []
-    with open(path, "r", encoding="utf-8") as f:
-        header = f.readline().strip()
-        # Accept either exact header or any header; we rebuild anyway.
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            parts = [p.strip() for p in line.split(",")]
-
-            # Need at least 4 fields logically
-            if len(parts) < 4:
-                continue
-
-            # Rebuild: last 3 are count, short_label, TN; everything before is orig_label
-            orig_label = ",".join(parts[:-3]).strip()
-            count = parts[-3].strip()
-            short_label = parts[-2].strip()
-            tn = parts[-1].strip()
-
-            rows.append(
-                {
-                    "orig_label": orig_label,
-                    "count": count,
-                    "short_label": short_label,
-                    "TN": tn,
-                }
-            )
-
-    return pd.DataFrame(rows)
-
-df = load_tracce_csv(DATA_PATH)
-
+df = pd.read_csv(DATA_PATH)
 
 required_cols = {"orig_label", "count", "short_label", "TN"}
 missing = required_cols - set(df.columns)

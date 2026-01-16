@@ -107,9 +107,18 @@ rotate_mode = st.sidebar.selectbox(
     help="Se 0°/90°, una parte delle keyword viene ruotata di 90°.",
 )
 
+DEFAULT_EXCLUSIONS = [
+    "age-it",
+    "ageit",
+    "aging",
+    "dataset",
+    "systematic review",
+    "literature review"
+]
+
 exclude_text = st.sidebar.text_area(
     "Escludi keyword (una per riga)",
-    value="",
+    value="\n".join(DEFAULT_EXCLUSIONS),
     help="Inserisci le keyword da escludere. Il confronto è case-insensitive.",
 )
 exclude_set = {

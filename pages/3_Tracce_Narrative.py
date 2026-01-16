@@ -228,7 +228,7 @@ def donut_svg_html(
     const width = Math.max(520, containerNode.clientWidth || 700);  // responsive to column width
     const height = 620; // enough space for top/bottom labels in 2-col layout
 
-    const margin = {{ top: 20, right: 170, bottom: 40, left: 170 }};
+    const margin = {{ top: 40, right: 220, bottom: 40, left: 220 }};
     const w = width - margin.left - margin.right;
     const h = height - margin.top - margin.bottom;
 

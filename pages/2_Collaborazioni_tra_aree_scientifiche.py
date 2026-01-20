@@ -364,8 +364,9 @@ def chord_html(matrix: pd.DataFrame, labels: list[str]) -> str:
       .on("mouseout", () => tooltip.style("opacity", 0));
 
     // Labels
+    // Labels (fixed orientation)
     if (showLabels) {
-      const labelRadius = outerRadius + 16;
+      const labelRadius = outerRadius + 18;
 
       const labelG = group.append("g")
         .attr("transform", d => {
@@ -374,32 +375,37 @@ def chord_html(matrix: pd.DataFrame, labels: list[str]) -> str:
           return `rotate(${rotate}) translate(${labelRadius},0)`;
         });
 
+      // small leader line
       labelG.append("line")
-        .attr("x1", 0).attr("x2", 18)
+        .attr("x1", 0).attr("x2", 14)
         .attr("y1", 0).attr("y2", 0)
         .attr("stroke", "#999");
 
       labelG.each(function(d) {
         const a = (d.startAngle + d.endAngle) / 2;
-        const isRight = a < Math.PI;
+        const isLeftSide = a > Math.PI;              // left half of circle
         const txt = labels[d.index] ?? "";
         const lines = wrapLabel(txt, wrapChars);
 
-        const t = d3.select(this).append("text")
-          .attr("x", 24)
+        const text = d3.select(this).append("text")
+          .attr("x", 20)
           .attr("y", 0)
-          .attr("dy", "-0.35em")
           .style("font-size", labelFontSize + "px")
           .style("font-weight", 500)
           .style("fill", "#111")
-          .style("text-anchor", isRight ? "start" : "end")
-          .attr("transform", isRight ? null : "scale(-1,1)");
+          .attr("text-anchor", isLeftSide ? "end" : "start")
+          // IMPORTANT: rotate(180) for left side (not scale), keeps direction consistent
+          .attr("transform", isLeftSide ? "rotate(180)" : null);
 
-        // tspans (multi-line)
+        // Multi-line wrap (no truncation)
+        // We centre vertically around the anchor by starting at negative offset
+        const lineHeightEm = 1.12;
+        const y0 = -((lines.length - 1) * lineHeightEm) / 2;
+
         lines.forEach((line, i) => {
-          t.append("tspan")
-            .attr("x", 24)
-            .attr("dy", i === 0 ? "0.9em" : "1.1em")
+          text.append("tspan")
+            .attr("x", 20)
+            .attr("dy", (i === 0 ? `${y0}em` : `${lineHeightEm}em`))
             .text(line);
         });
       });

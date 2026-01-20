@@ -151,7 +151,7 @@ def chord_html(
     }
     data_json = json.dumps(payload)
 
-    return f"""
+    html = """
 <!doctype html>
 <html>
 <head>
@@ -193,7 +193,7 @@ def chord_html(
   <div class="wrap" id="chart"></div>
 
   <script>
-    const payload = {data_json};
+    const payload = __DATA_JSON__;
     const labels = payload.labels;
     const matrix = payload.matrix;
     const colors = payload.colors;
@@ -343,6 +343,8 @@ def chord_html(
 </body>
 </html>
 """
+    return html.replace("__DATA_JSON__", data_json)
+
 
 
 # ----------------------------

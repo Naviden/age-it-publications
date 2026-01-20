@@ -202,21 +202,9 @@ def chord_html(
     const maxLabelChars = payload.max_label_chars ?? 22;
     const showLabels = payload.show_labels ?? true;
 
-    function wrapLabel(text) {{
-      const words = (text || "").split(/\s+/).filter(Boolean);
-      const lines = [];
-      let line = "";
-      for (const w of words) {{
-        const candidate = line ? (line + " " + w) : w;
-        if (candidate.length <= maxLabelChars) {{
-          line = candidate;
-        }} else {{
-          if (line) lines.push(line);
-          line = w;
-        }}
-      }}
-      if (line) lines.push(line);
-      return lines;
+    function truncateLabel(s) {{
+      if (!s) return "";
+      return s.length > maxLabelChars ? (s.slice(0, maxLabelChars - 1) + "…") : s;
     }}
 
     const container = document.getElementById("chart");
@@ -314,22 +302,12 @@ def chord_html(
         .attr("dy", "0.35em")
         .attr("transform", d => {{
           const rotate = d.angle * 180 / Math.PI - 90;
-          const translate = outerRadius + 16;
+          const translate = outerRadius + 12;
           const flip = d.angle > Math.PI ? " rotate(180)" : "";
           return `rotate(${{rotate}}) translate(${{translate}})${{flip}}`;
         }})
         .attr("text-anchor", d => d.angle > Math.PI ? "end" : "start")
-        .each(function(d) {
-          const lines = wrapLabel(labels[d.index]);
-          const textSel = d3.select(this);
-          textSel.text(null);
-          textSel.selectAll("tspan")
-            .data(lines)
-            .join("tspan")
-            .attr("x", 0)
-            .attr("dy", (l, i) => i === 0 ? "0em" : "1.1em")
-            .text(l => l);
-        })
+        .text(d => truncateLabel(labels[d.index]))
         .on("mousemove", (event, d) => {{
           tooltip
             .style("opacity", 1)

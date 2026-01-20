@@ -32,8 +32,8 @@ if not DATA_PATH.exists():
 
 df = pd.read_csv(DATA_PATH)
 
-if "keywords" not in df.columns:
-    st.error("Il CSV deve contenere una colonna chiamata 'keywords'.")
+if "keywords_en" not in df.columns:
+    st.error("Il CSV deve contenere una colonna chiamata 'keywords_en'.")
     st.stop()
 
 
@@ -139,7 +139,7 @@ elif split_mode == "Punto e virgola (;)":
 else:
     split_re = r"[\n]+"
 
-series = df["keywords"].fillna("").astype(str)
+series = df["keywords_en"].fillna("").astype(str)
 
 tokens = (
     series

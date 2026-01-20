@@ -162,7 +162,13 @@ def chord_html(
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       overflow: hidden;
-    }}
+    }
+    #chart {
+      width: 100%;
+      height: 860px; /* IMPORTANT: give the SVG a real height */
+    }
+    svg { width: 100%; height: 100%; display: block; }
+}
     .wrap {{
       width: 100%;
       height: 100%;

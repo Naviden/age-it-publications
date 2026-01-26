@@ -337,7 +337,15 @@ st.title("Collaborazioni tra aree scientifiche")
 # Numero totale paper (righe del CSV) e data aggiornamento sotto al titolo
 total_papers = int(len(df))
 st.markdown(
-    f"<div style='font-size: 0.95rem; color: #666;'>Totale paper: <b>{total_papers}</b> &nbsp;&nbsp;|&nbsp;&nbsp; Aggiornamento: <b>{UPDATE_STR}</b></div>",
+    f"""
+    <div style='font-size: 0.95rem; color: #666;'>
+      Corpus analizzato: <b>{total_papers}</b> paper
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      Collaborazioni tra aree (basate su <b>co-autori</b>)
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      Aggiornamento: <b>{UPDATE_STR}</b>
+    </div>
+    """,
     unsafe_allow_html=True,
 )
 
